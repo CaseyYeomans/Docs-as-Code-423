@@ -28,7 +28,8 @@ Observe the following steps to install the Profisee Platform in an on-premise en
 
 8. Choose the first Administrator Account.
 
-The Administrator Account should be a service account you can log in with. It will be used to run system processes such as Data Quality rules. This account should **not**be a member of the Local Administrators group.
+> [!NOTE]
+> The Administrator Account should be a service account you can log in with. It will be used to run system processes such as Data Quality rules. This account should not be a member of the Local Administrators group.
 
 9. Check the **Active Directory** checkbox and add a label for the Windows Authentication option
 10. Configure OIDC Auth Providers. For Claims Mappings for Entra, OKTA, or Google, see [here](https://support.profisee.com/wikis/profiseeplatform/oidc_provider_info_and_claims_mappings).
@@ -42,12 +43,14 @@ The Administrator Account should be a service account you can log in with. It wi
 13. Select the website that the web application should be added under (**Default Web Site**is recommended).
 14. Check the HTTPS option, which is automatically selected if your DNS URL is entered with HTTPS.
 
-This option is not available before you configure the HTTPS binding in IIS. If you do not have HTTPS configured with a valid Certificate, you will receive the following warning. ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i7f66f181657be991.png)
+> [!NOTE]
+> This option is not available before you configure the HTTPS binding in IIS. If you do not have HTTPS configured with a valid Certificate, you will receive the following warning.
 
 15. Create Profisee Web Application ("Profisee" recommended).
 16. Create App Pool  ("Profisee" recommended) and enter your AD Service Account Username and Password.
 
-Do **NOT** use the DefaultAppPool or .Net 4.5 App Pools.
+> [!CAUTION]
+> Do NOT use the DefaultAppPool or .Net 4.5 App Pools.
 
 ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-if0a0f9bb819ab4ad.png)
 
@@ -65,9 +68,8 @@ Do **NOT** use the DefaultAppPool or .Net 4.5 App Pools.
 19. Choose your Authentication method. Windows Authentication and SQL Authentication are available for OnPrem/IaaS, and SQL Authentication is only available for PaaS SQL. Entra Authentication and others are not available for PaaS.
 20. Enter the Username and Password for the Authentication type selected.
 
-The user must have the **SysAdmin** role in OnPrem/IaaS or be the SQL Admin User in PaaS. See [System Requirements for Profisee Server](https://support.profisee.com/wikis/profiseeplatform/system_requirements_for_profisee_server) for more information.   
-  
-The admin user will be used only during Configuration, then the SQL access will run under the User created for the service account, or a generated SQL Auth user. This account should **not**be a member of the Local Administrators group.
+> [!NOTE]
+> The user must have the SysAdmin role in OnPrem/IaaS or be the SQL Admin User in PaaS. See System Requirements for Profisee Server for more information. The admin user will be used only during Configuration, then the SQL access will run under the User created for the service account, or a generated SQL Auth user. This account should not be a member of the Local Administrators group.
 
 21. Test the connection and click **Next** to continue.
 
@@ -88,7 +90,8 @@ The admin user will be used only during Configuration, then the SQL access will 
 27. Enter your AD Service Account Username and Password, and confirm the Password.
 28. Choose the type of user that will be created in the Database to get the service account permissions.
 
-The user can be a Windows Auth user and use the account configured above, or a generated SQL Auth user. If you want to be able to move the DB to Azure at a later time, then choose SQL Auth User.
+> [!NOTE]
+> The user can be a Windows Auth user and use the account configured above, or a generated SQL Auth user. If you want to be able to move the DB to Azure at a later time, then choose SQL Auth User.
 
 ### Configure File Repository
 

@@ -13,7 +13,8 @@ A Staging Table is a place to load data changes at the database level before the
 
 Note that you cannot import artifacts from newer version of Profisee into older versions of Profisee.
 
-**WARNING**: Never directly load or change data in the underlying data tables (i.e. tables in the data schema). Direct changes to the data schema are not supported.
+> [!WARNING]
+> WARNING : Never directly load or change data in the underlying data tables (i.e. tables in the data schema). Direct changes to the data schema are not supported.
 
 [Staging Table](https://support.profisee.com/wikis/profiseeplatform/manage_staging_tables_via_fastapps_studio) administration facilitates management of staging tables and related artifacts used for bulk data loading. To manage staging tables, you must be granted the following roles and permissions:
 

@@ -19,7 +19,8 @@ The Overview tab allows you to set general view options for the presentation vie
   + Name
   + Code
 
-It is recommended not to use the display format **Name** when blank values exist for Name.
+> [!NOTE]
+> It is recommended not to use the display format Name when blank values exist for Name.
 
 * **Page Size**: Determines the default number of records that are displayed in the entity grid at once.
 * **Show validation column**: If selected, this option includes the column containing member validation status in the entity grid control.
@@ -40,9 +41,8 @@ Select attributes from the Available Attributes list (or Select All) to populate
 * **Quick Filter**: If selected, this option allows an attribute to be discoverable when a user uses the quick filter in this presentation view.
 * **Display Width**: The display width (in pixels) for this attribute in the presentation view.
 
-When the presentation view is deployed in Profisee FastApp portal, the first column in an entity grid is displayed as a hyperlink that opens the Open Member form for each row. Though this is not dependent on the attribute used, it is recommended to choose an attribute that can easily identify a member as the first column in the entity grid, such as the **Name** attribute.  
-  
-If the attribute in the first column is a Link or Match Group attribute configured for hyperlink, the attribute will open to the associated link or match group control instead of the Open Member form.
+> [!NOTE]
+> When the presentation view is deployed in Profisee FastApp portal, the first column in an entity grid is displayed as a hyperlink that opens the Open Member form for each row. Though this is not dependent on the attribute used, it is recommended to choose an attribute that can easily identify a member as the first column in the entity grid, such as the Name attribute. If the attribute in the first column is a Link or Match Group attribute configured for hyperlink, the attribute will open to the associated link or match group control instead of the Open Member form.
 
 ### Filters
 
@@ -56,7 +56,8 @@ For information on building entity grid filters, refer to the following topics:
 
 ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-ie3e3b81bc779ba65.png)
 
-Note that when exporting presentation views, the **Export All** button will export **all** presentation views even if a filter is applied to limit the presentation views that are displayed.
+> [!NOTE]
+> Note that when exporting presentation views, the Export All button will export all presentation views even if a filter is applied to limit the presentation views that are displayed.
 
 ### Sort Columns
 

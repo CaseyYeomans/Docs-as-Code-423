@@ -63,7 +63,8 @@ The Overview tab allows you to view the previously configured Strategy Name, Con
 
 This tab allows you to map Request Properties onto Customer Attributes, or use the Aisey-powered Assign button to automatically suggest mappings. You can also manually create expressions using the [expression editor](https://support.profisee.com/wikis/profiseeplatform/using_the_expression_editor_in_portal) to define a customer attribute with specific parameters.
 
-The DUNS Number required as the first property can be located by using the D&B Identity Resolution service provider.
+> [!NOTE]
+> The DUNS Number required as the first property can be located by using the D&B Identity Resolution service provider.
 
 ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i7f87f8ca75eaee04.png)
 

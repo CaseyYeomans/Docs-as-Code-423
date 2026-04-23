@@ -8,7 +8,8 @@ Lookup-Before-Create (LuBC) allows you to configure the behavior and appearance 
 4. Select the order of the attributes to be displayed during LuBC results.
 5. Enter a column label for each attribute to be displayed during LuBC results.
 
-If no presentation view is selected, the LuBC results will be displayed with the columns: **Code**,**Name**,**[Matching Attributes]**.
+> [!NOTE]
+> If no presentation view is selected, the LuBC results will be displayed with the columns: Code , Name , [Matching Attributes] .
 
 ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i76cd97a6c7726f46.png)
 

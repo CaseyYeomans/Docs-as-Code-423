@@ -10,6 +10,7 @@ In order to connect Profisee’s Fabric Workload to a Profisee IaaS (on-premise)
    * If the Profisee PaaS/IaaS instance is using a **public CA leaf certificate**, the reverse proxy should be able to validate said certificate against the Public Issuing CA's Certificate Revocation List (CRL) endpoint.
    * If the Profisee PaaS/IaaS instance is using an **internal CA leaf certificate**, the reverse proxy should be able to validate said certificate against the Internal Issuing CA's Certificate Revocation List (CRL) endpoint.
 
-Note that PaaS deployments of Profisee that are not behind a firewall can connect Fabric to Profisee without additional configuration.
+> [!NOTE]
+> Note that PaaS deployments of Profisee that are not behind a firewall can connect Fabric to Profisee without additional configuration.
 
 ---

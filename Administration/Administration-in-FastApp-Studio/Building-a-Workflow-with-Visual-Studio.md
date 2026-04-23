@@ -15,16 +15,14 @@ All of which can be found within the *AcceleratorFramework* install folder.
 1. **Create a New Project** in Visual Studio from **Profisee Workflow Library**.
 2. Configure the project name, location directory, solution name, and framework for your project.
 
-The solution includes a default project which contains the required References and two sample .xaml files for basic workflows. Profisee workflows are defined in .xaml file format. When you register a workflow in Profisee FastApp Studio, you select the .xaml file associated with a workflow project to register that workflow.  
-  
-To change the Workflow name, select the **Properties** tab in the bottom-right corner of the screen, then select the **Name** text box in the top-right.
+> [!NOTE]
+> The solution includes a default project which contains the required References and two sample .xaml files for basic workflows. Profisee workflows are defined in .xaml file format. When you register a workflow in Profisee FastApp Studio, you select the .xaml file associated with a workflow project to register that workflow. To change the Workflow name, select the Properties tab in the bottom-right corner of the screen, then select the Name text box in the top-right.
 
 4. Click **Create**.
 5. Expand the project under Solution Explorer and double click the xaml file to open the sample workflow in the workflow designer.![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i71aae78941e30d18.png)
 
-In this sample .xaml, you will see a pre-built workflow template in the workflow designer. This workflow contains a sequence of activities for a basic workflow: InitiateWorkflow, ContributionTask, and ApprovalTask activities with their appropriate properties filled out. This is a basic workflow that is ready to use as is, and might only require the specification of the appropriate entity name in the InitiateWorkflow activity. You may also use this as a starting point and change or add activities to create your own workflow logic. Note that the InitiateWorkflow task must be included as the first activity in the sequence to properly execute a workflow.  
-  
-Additionally, the **Profisee Template Workflow Activity**pre-built workflow template contains the same activities as above, but the InitiateWorkflow activity is replaced with the similar InitiateTemplateWorkflow activity. This activity does not require you to define an entity. You will be able to define one or more entities during the [configuration](https://support.profisee.com/wikis/profiseeplatform/configuring_workflows) process.
+> [!NOTE]
+> In this sample .xaml, you will see a pre-built workflow template in the workflow designer. This workflow contains a sequence of activities for a basic workflow: InitiateWorkflow, ContributionTask, and ApprovalTask activities with their appropriate properties filled out. This is a basic workflow that is ready to use as is, and might only require the specification of the appropriate entity name in the InitiateWorkflow activity. You may also use this as a starting point and change or add activities to create your own workflow logic. Note that the InitiateWorkflow task must be included as the first activity in the sequence to properly execute a workflow. Additionally, the Profisee Template Workflow Activity pre-built workflow template contains the same activities as above, but the InitiateWorkflow activity is replaced with the similar InitiateTemplateWorkflow activity. This activity does not require you to define an entity. You will be able to define one or more entities during the configuration process.
 
 6. Design your workflow by dragging activities or controls from the provided workflow sections in the toolbox into the workflow designer, then setting all required in-argument or out-argument values. ![](https://Profisee.magentrixcloud.com/sys/StaticAsset/Read/file-i1354c55628c715b.png)
 
@@ -36,7 +34,8 @@ If needed, you can add another .xaml using the template to create a new workflo
 
 7. Click **Build** on the topmost toolbar, then select **Build Solution**.
 
-The Output panel will display the build process in real time and display errors if any are encountered. All errors must be addressed before the project can be successfully built.
+> [!NOTE]
+> The Output panel will display the build process in real time and display errors if any are encountered. All errors must be addressed before the project can be successfully built.
 
 Once the project has been successfully built, you can [r](https://support.profisee.com/wikis/profiseeplatform/registering_workflows)[egister any of the Profisee workflows](http://support.profisee.com/wikis/profiseeplatform/registering_workflows) within the project in Profisee FastApp Studio to begin administering the workflow.
 

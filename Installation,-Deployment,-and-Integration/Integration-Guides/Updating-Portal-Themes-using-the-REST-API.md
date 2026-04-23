@@ -19,7 +19,8 @@ The changeable elements and the default values for these elements are as follows
 | **selectedBg** | 211, 237, 249 | Select row background on various controls (e.g file attachments, history rows), hovered row background on matching controls |
 | **hyperlink** | 19, 98, 134 | Link values in a Form or other misc portal link items. |
 
-Note that you can only have one theme configured for Portal at a time.
+> [!NOTE]
+> Note that you can only have one theme configured for Portal at a time.
 
 You can also replace the default Profisee logo with your organization's logo. To do so, navigate to the **PortalConfiguration**section of the swagger page and select the **portalconfiguration/icon** PUT request. You will be prompted to select a .png to replace the default image.  
  ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-id5c7ce660a36ca90.png)

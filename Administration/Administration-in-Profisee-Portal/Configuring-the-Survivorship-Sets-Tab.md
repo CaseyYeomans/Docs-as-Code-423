@@ -6,11 +6,8 @@ Survivorship sets contain all attributes related to each other to represent a pi
 
 Multiple sets are used to separate different pieces of data, or when different promotion criteria are needed.
 
-• More sets will take longer to process, so only add attributes required to be in the Golden record like Name, Email, Phone, Address, Etc.
-
- • Source System ID, Source Updated Date, etc. should not be used as they pertain to the source record only.
-
- • Address Verification Status, Match Status, etc. are not Golden record data but only qualify the source record.
+> [!NOTE]
+> • More sets will take longer to process, so only add attributes required to be in the Golden record like Name, Email, Phone, Address, Etc. • Source System ID, Source Updated Date, etc. should not be used as they pertain to the source record only. • Address Verification Status, Match Status, etc. are not Golden record data but only qualify the source record.
 
 Click the **+**icon on the Survivorship Sets table to create a new survivorship set. The Survivorship Attribute Sets panel opens.
 
@@ -26,7 +23,8 @@ Click the **+**icon on the Survivorship Sets table to create a new survivorship 
 4. Select an option for **Harmonization Behavior** (see behavior options above).
 5. If desired, create a filter to determine **Harmonization Conditions**using the expression editor.
 
-You can choose behavior for Promotion, Harmonization, or both. At least one behavior must be selected.
+> [!NOTE]
+> You can choose behavior for Promotion, Harmonization, or both. At least one behavior must be selected.
 
 6. Select one or more attributes from the **Available Attributes** list and add them to the **Selected Attributes** list, either by double-clicking the attribute name or by clicking the arrows to move selected attributes between the panes.
 

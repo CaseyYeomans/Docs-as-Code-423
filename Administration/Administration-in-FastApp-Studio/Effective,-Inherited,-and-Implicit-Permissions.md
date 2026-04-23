@@ -14,9 +14,8 @@ The following sample scenarios show examples of effective permissions.![](https
 
 Effective permissions can be inherited through a Profisee team or through an [Active Directory](https://support.profisee.com/wikis/profiseeplatform/accounts_overview) group. A user's effective permissions gained from an AD group are only applied if the user is directly logged into the service.
 
-When an automated service such as a workflow makes an API call on behalf of another user, effective permissions for that account gained from an AD group are ignored.   
-  
-When you [configure a workflow](https://support.profisee.com/wikis/profiseeplatform/configuring_workflows), ensure the run-as user has been assigned all necessary permissions directly or through a team.
+> [!CAUTION]
+> When an automated service such as a workflow makes an API call on behalf of another user, effective permissions for that account gained from an AD group are ignored. When you configure a workflow , ensure the run-as user has been assigned all necessary permissions directly or through a team.
 
 ## Inherited Permissions
 

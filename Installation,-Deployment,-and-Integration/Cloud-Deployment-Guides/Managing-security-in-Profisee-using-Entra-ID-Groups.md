@@ -10,7 +10,8 @@ az ad app list --app-id $AppRegClientId --query "[].groupMembershipClaims" -o ts
 
 2. Create Groups in Entra ID.
 
-It is recommended to give them names such as *ProfiseeDev\_Admins*, *ProfiseeQA\_Admins*, *ProfiseeProd\_Admins*, *ProfiseeDev\_CRUD*, *ProfiseeDev\_ReadOnly*  or *ProfiseeDev\_Stewards* or a similar naming convention for what that group would do in the particular Profisee instance. This makes it easier for Azure Admins to manage the group members easily. Have your Azure admin share those Group Names and Object IDs with the Profisee admin.
+> [!NOTE]
+> It is recommended to give them names such as ProfiseeDev\_Admins , ProfiseeQA\_Admins , ProfiseeProd\_Admins , ProfiseeDev\_CRUD , ProfiseeDev\_ReadOnly or ProfiseeDev\_Stewards or a similar naming convention for what that group would do in the particular Profisee instance. This makes it easier for Azure Admins to manage the group members easily. Have your Azure admin share those Group Names and Object IDs with the Profisee admin.
 
 3. Add the users to those Entra ID groups.
 4. If the command in step 1 above returns something other than **ApplicationGroup**, fix it by deleting the existing groups claims configuration in the App Registration and add a groups claim configuration. You must select the correct groups claim type. Groups claims work only with the 4th option shown below.  

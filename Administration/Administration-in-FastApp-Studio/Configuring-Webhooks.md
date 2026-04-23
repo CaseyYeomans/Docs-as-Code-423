@@ -17,7 +17,8 @@ To create a User Account:
 2. Ensure the **Unattended Authentication** option is enabled.
 3. Record the User Name generated for this account.
 
-You may or may not want to create several accounts, depending on your environment and preferences. A single account can be shared across multiple Webhook Consumers, or a new account can be used for each individual Webhook Consumer. Creating several accounts allows each Webhook Consumer to be more tightly controlled in terms of what data it can access. Sharing the same account across many Webhook Consumers means that all consumers will have broad access to data needed by every consumer.
+> [!NOTE]
+> You may or may not want to create several accounts, depending on your environment and preferences. A single account can be shared across multiple Webhook Consumers, or a new account can be used for each individual Webhook Consumer. Creating several accounts allows each Webhook Consumer to be more tightly controlled in terms of what data it can access. Sharing the same account across many Webhook Consumers means that all consumers will have broad access to data needed by every consumer.
 
 ## Registering the Webhook Subscriber
 

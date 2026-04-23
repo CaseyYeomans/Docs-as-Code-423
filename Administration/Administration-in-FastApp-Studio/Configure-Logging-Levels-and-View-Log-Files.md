@@ -39,6 +39,7 @@ To configure the logging level for an application or service, you must change th
 | **Configuration Manager** | C:\Program Files\Profisee\Master Data Maestro Server\8.1.0\Profisee.MasterDataMaestro.Host.dll.Config | C:\Program Files\Profisee\Master Data Maestro Server\8.1.0\LogFiles | <add key="ProfiseeAppSettings:MinimumLogLevel" value="Warning" /> | |
 | **Authentication Service** | C:\Program Files\Profisee\Master Data Maestro Server\8.1.0\Services\Auth\appsettings.json | C:\Program Files\Profisee\Master Data Maestro Server\8.1.0\Services\Auth\LogFiles | "MinimumLogLevel": "Warning" | |
 
-Configuration files are read-only and require administrator privileges to edit.
+> [!NOTE]
+> Configuration files are read-only and require administrator privileges to edit.
 
 ---

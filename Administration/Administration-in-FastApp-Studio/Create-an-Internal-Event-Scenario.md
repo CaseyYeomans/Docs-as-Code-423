@@ -44,7 +44,8 @@ Options include:
 
   An update to any value in the selected list of selected attributes is a triggering action.
 
-If you want Eventing to trigger when values are null, select the **Include Blanks** checkbox and add specified values. If you want eventing to trigger *only* when values are null, select the Include Blanks checkbox and include no attribute values.
+> [!NOTE]
+> If you want Eventing to trigger when values are null, select the Include Blanks checkbox and add specified values. If you want eventing to trigger only when values are null, select the Include Blanks checkbox and include no attribute values.
 
 Selecting all of the attributes under Selected attributes does not include any attributes added in the future.
 

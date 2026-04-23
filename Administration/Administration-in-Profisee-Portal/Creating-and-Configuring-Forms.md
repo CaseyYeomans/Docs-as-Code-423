@@ -68,7 +68,8 @@ Tabs allow you to organize form elements into logical sections, making complex f
 
 To add a new tab, right-click on the Form element or an existing Tab Layout in the Form Layout tree and select **Add tab layout**. New tabs are automatically named "Tab [number]" based on the tab count (e.g., Tab 1, Tab 2). You can also right click the form name and select **Add multiple tabs** to create several tabs at once.
 
-Note: You must have the **Show tabs on form** checkbox enabled to create multiple tabs. If this option is unchecked, only the first tab will be visible in the Form Preview.
+> [!NOTE]
+> Note: You must have the Show tabs on form checkbox enabled to create multiple tabs. If this option is unchecked, only the first tab will be visible in the Form Preview.
 
 #### Renaming Tabs
 
@@ -82,7 +83,8 @@ You can reorder tabs using drag-and-drop in the Form Layout tree. Click and hold
 
 To delete a tab, right-click on the tab layout element in the Form Layout tree and select **Delete**.
 
-Important: If you have multiple tabs created and then uncheck the **Show tabs on form** option, only the first tab (left to right) will remain visible in the form.
+> [!NOTE]
+> Important: If you have multiple tabs created and then uncheck the Show tabs on form option, only the first tab (left to right) will remain visible in the form.
 
 ### Building Form Layout with Elements
 
@@ -120,7 +122,8 @@ You can reorganize form elements using drag-and-drop in the Form Layout tree. Cl
 
 Additionally, you can use the context menu to **Copy** and **Paste** elements. Right-click an element and select Copy, then right-click on the destination location and select Paste.
 
-The Paste option only appears in the context menu when you have previously copied an eligible element.
+> [!NOTE]
+> The Paste option only appears in the context menu when you have previously copied an eligible element.
 
 ### Using the Form Preview
 

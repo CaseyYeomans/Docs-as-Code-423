@@ -70,7 +70,8 @@ When set, the system automatically applies data quality rules that are marked as
 9. Navigate to the **Attributes** tab.
 10. Select which attributes to include in the staging table from the attributes list. If all are desired, click **Select All**. To deselect all attributes, click **Clear All**.
 
-If new attributes should be included in the staging table after they are added, select **Include in staging table** under **Default Behavior for New Attributes**.
+> [!NOTE]
+> If new attributes should be included in the staging table after they are added, select Include in staging table under Default Behavior for New Attributes .
 
 11. Set null handling preferences. Refer to [Null Handling and Auto Add DBAs in Staging Table Configurations](https://support.profisee.com/wikis/profiseeplatform/null_handling_and_auto_add_dbas_in_staging_table_definitions) for more information concerning settings.
 12. Click **Save**or **Save and close** to store the staging table configuration and to create its related artifacts in the database.

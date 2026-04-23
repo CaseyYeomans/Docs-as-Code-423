@@ -19,7 +19,8 @@ The ReverseRecordTransaction activity allows workflow designers to (typically) r
 
 When a workflow is initiated via Real-time Event Processing, one of the arguments passed to the workflow is the RecordDataContext that triggered the event. If that event was triggered due to a data change, the RecordDataContext argument's TransactionId property is set to the data transaction that triggered the event. Therefore, a workflow has, at its disposal, the EntityId, RecordId, and TransactionId that identify the changes to reverse.
 
-Because the event will be generated after ReverseRecordTransaction completed due to nature of Real-time Event Processing, it is recommended to have a attribute rule that only allow ReverseRecordTransaction if certain attribute value fulfilled. For example, setting up “shouldReverseRecord” attribute and set the attribute rule to ‘true’ will prevent this activity from having infinite loop.
+> [!CAUTION]
+> Because the event will be generated after ReverseRecordTransaction completed due to nature of Real-time Event Processing, it is recommended to have a attribute rule that only allow ReverseRecordTransaction if certain attribute value fulfilled. For example, setting up “shouldReverseRecord” attribute and set the attribute rule to ‘true’ will prevent this activity from having infinite loop.
 
 ---
 

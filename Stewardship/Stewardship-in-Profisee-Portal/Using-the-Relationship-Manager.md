@@ -14,13 +14,13 @@ To exit the Relationship Viewer, click the **X**icon on the top-right side of th
 
 The Relationship Viewer displays a relationship using one entity within the relationship as the subject, displaying all related entities with their appropriate predicates. If there are multiple entities in the same relationship, they will be shown as a stack of relationship cards.
 
-For example: if a restaurant is viewed as the subject, there may be lines drawn to entities named "Customers" and "Supplier" with the predicates "serves" and "receives ingredients from" respectively. Because there are many customers, this relationship is displayed as a stack of cards with a number on the face indicating the number of records that are represented. However, if the restaurant only has one supplier, that entity will be displayed with its name and code.
+> [!NOTE]
+> For example: if a restaurant is viewed as the subject, there may be lines drawn to entities named "Customers" and "Supplier" with the predicates "serves" and "receives ingredients from" respectively. Because there are many customers, this relationship is displayed as a stack of cards with a number on the face indicating the number of records that are represented. However, if the restaurant only has one supplier, that entity will be displayed with its name and code.
 
 To view the records within a stack of relationship cards, click the stack to launch a right-hand sidebar that displays the individual cards contained within the stack. Each card is displayed with the name and code of its entity.![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i53be12f9f4d9bfea.png)
 
-Note that the relationship viewer can only display eight kinds of relationships at a time. For relationship views with more than 8 relationship types, you can click the Forward and Backward pager at the bottom of the window to navigate to the next set of relationship types. 'Child' cards always appear as stacks even if they contain only one record.  
-  
-If a relationship card is empty, you can select a record from a dropdown list to assign to the record.
+> [!NOTE]
+> Note that the relationship viewer can only display eight kinds of relationships at a time. For relationship views with more than 8 relationship types, you can click the Forward and Backward pager at the bottom of the window to navigate to the next set of relationship types. 'Child' cards always appear as stacks even if they contain only one record. If a relationship card is empty, you can select a record from a dropdown list to assign to the record.
 
 You can navigate to a related record by hovering over a record in the sidebar and clicking it to expand. The card expands and becomes the new subject of the relationship, allowing you to further navigate to records related to the selected record. The previously selected record becomes a tab in the top-left of the screen that can be clicked to return to the previous record.
 
@@ -36,6 +36,7 @@ When using a Many to Many relationship, additional options are available in the 
 
 ![](https://profisee.visualstudio.com/ad098ab8-fc30-4fe4-982d-460e6c9eb694/_apis/wit/attachments?FileNameGUID=996a0af2-905a-4142-aae8-ad8af39d5d2a&FileName=tmp4C01.png)
 
-The Relationship Manager cannot display Many-to-Many relationships where Entity 1 and Entity 2 are the same entity, even when these relationships are valid. To engage with these kinds of relationships in the Relationship Manager, it is recommended to create two duplicate entities for Entity 1 and Entity 2 with different parent-child relationships to the bridge entity **OR** to use a Relationship List on a form.
+> [!NOTE]
+> The Relationship Manager cannot display Many-to-Many relationships where Entity 1 and Entity 2 are the same entity, even when these relationships are valid. To engage with these kinds of relationships in the Relationship Manager, it is recommended to create two duplicate entities for Entity 1 and Entity 2 with different parent-child relationships to the bridge entity OR to use a Relationship List on a form.
 
 ---

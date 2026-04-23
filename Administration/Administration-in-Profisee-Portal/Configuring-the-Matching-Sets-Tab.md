@@ -4,10 +4,8 @@ To create a new Matching Set, click the **+** icon on the **Matching Sets** tabl
 
 Each set represents the minimum matching criteria. Start with one attribute, and if there is over-matching, add another. More attributes result in fewer matches being found.
 
-• For best performance, the first attribute in the set should be the one with the most distinct values.   
- • Do NOT use a single set with multiple attributes with "Ignore blanks" to handle blank values.  
- • Do NOT use "Ignore Blanks" on the first attribute set. Doing so may decrease performance.  
- • Do NOT build descending sets with the same 4 attributes, then 3, then 2, etc. Each set should have the minimum required attributes to make a match. If 2 are the minimum, then 4 and 3 are redundant.
+> [!NOTE]
+> • For best performance, the first attribute in the set should be the one with the most distinct values. • Do NOT use a single set with multiple attributes with "Ignore blanks" to handle blank values. • Do NOT use "Ignore Blanks" on the first attribute set. Doing so may decrease performance. • Do NOT build descending sets with the same 4 attributes, then 3, then 2, etc. Each set should have the minimum required attributes to make a match. If 2 are the minimum, then 4 and 3 are redundant.
 
 ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i3812d8f6e43ec84f.png)
 

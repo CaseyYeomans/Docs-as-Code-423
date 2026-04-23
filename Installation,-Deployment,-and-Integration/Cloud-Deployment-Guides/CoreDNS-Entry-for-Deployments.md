@@ -7,7 +7,8 @@ To add a **CoreDNS** entry:
 1. Navigate to your Web portal > Cluster > Configuration.
 2. Switch the **Filter by namespace** setting to **kube-system**, then edit the **coredns-custom** entry.
 
-Do not edit the *coredns* entry. Only edit the *coredns-custom* entry.
+> [!CAUTION]
+> Do not edit the coredns entry. Only edit the coredns-custom entry.
 
 3. If there is a **data:** section, please contact Profisee Support before implementing this change. If there is not a **data:** section, you may proceed with the next steps.  
      

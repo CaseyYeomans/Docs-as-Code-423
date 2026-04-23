@@ -8,7 +8,8 @@ The configuration requirements of the Managed Identity are driven by the followi
 
 * Do you want to create a dedicated Resource Group to contain all the resources associated with the Profisee AKS cluster, or do you want to co-mingle these resources in an existing resource group?
 
-Profisee generally recommends using a dedicated Resource Group to easily manage these resources within Azure. For example, by using a dedicated Resource Group, the cluster resources can easily be decommissioned by simply removing the associated Resource Group.
+> [!NOTE]
+> Profisee generally recommends using a dedicated Resource Group to easily manage these resources within Azure. For example, by using a dedicated Resource Group, the cluster resources can easily be decommissioned by simply removing the associated Resource Group.
 
 * If you want to create a dedicated resource group, do you want to create this group manually in advance of the deployment, or do you want the deployment process to create this group automatically as part of the deployment process?
 * If you are using an existing group or creating the group manually, do you want to allow the deployment process to automatically update your DNS with the host names provisioned in the cluster or will you or your network administrator(s) choose to update your DNS manually?
@@ -38,9 +39,8 @@ The following action must be taken depending on the decisions outlined above:
 * If the DNS is in the same resource group to which you plan to add the Profisee cluster resources, there is nothing else to do. However, if the DNS is in a different resource group, you must also grant Contributor rights to the Managed Identity to the DNS’s resource group.
 * Make sure to record the DNS’s host name, domain, and Resource Group as you will need these when specifying the **DNS Host Name**, **DNS Domain Name**, and **DNS Domain Resource Group** properties of the ARM template.
 
-If you choose to manually update your DNS server, the Profisee cluster will deploy but will be unreachable and, thus unusable, until your DNS is updated with the host name and address provisioned in the cluster. Once the cluster has been deployed, you can find the information needed to update the DNS from the Azure Portal by following the navigation path below:  
-  
-**Resource Groups > [Profisee Cluster Resource Group Name] > Access Control (IAM) > InstallProfiseePlatform > Outputs**
+> [!NOTE]
+> If you choose to manually update your DNS server, the Profisee cluster will deploy but will be unreachable and, thus unusable, until your DNS is updated with the host name and address provisioned in the cluster. Once the cluster has been deployed, you can find the information needed to update the DNS from the Azure Portal by following the navigation path below: Resource Groups > [Profisee Cluster Resource Group Name] > Access Control (IAM) > InstallProfiseePlatform > Outputs
 
 **If you want the deployment process to automatically add the Application (App) Registration for the Profisee AKS cluster to Azure AD as part of the deployment process, the Managed Identity must be assigned the Application Developer role inside Azure AD. Use the Azure Portal to assign this role:**
 
@@ -52,7 +52,8 @@ If you choose to manually update your DNS server, the Profisee cluster will depl
 
 If you choose not to automatically add the App Registration, you must create it manually and the record the Client Id associate with it as you will need this for the **Active Directory Client Id** property.
 
-Profisee recommends automatically creating the App Registration as it is simpler and more efficient.
+> [!NOTE]
+> Profisee recommends automatically creating the App Registration as it is simpler and more efficient.
 
 Once you have completed the actions associated with the decision points above, your Managed Identity, Resource Group(s), and Azure AD should be ready for the deployment process. Remember to record the following ARM properties and have the information at hand when you start the deployment process:
 

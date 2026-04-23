@@ -17,13 +17,15 @@ To edit an account:
    * **Description**
    * **Email address**
 
-If the information fields contain information imported from Active Directory, any information edited in Accounts will be used instead within the Profisee application.
+> [!NOTE]
+> If the information fields contain information imported from Active Directory, any information edited in Accounts will be used instead within the Profisee application.
 
 6. If desired, click **Enable** under Unattended Authentication to generate a unique Client ID.
 
 This setting must be enabled for another program to be able to log in on behalf of this user. If this setting is not enabled, the user can only log in directly through Profisee FastApp Studio.
 
-When submitting any Unattended Authentication request, any permissions required to complete the request (including roles or entity level permissions) should be assigned directly to the user or via teams. You should not assign permissions to this user by Active Directory group membership. Failure to do so may result in failed requests.
+> [!CAUTION]
+> When submitting any Unattended Authentication request, any permissions required to complete the request (including roles or entity level permissions) should be assigned directly to the user or via teams. You should not assign permissions to this user by Active Directory group membership. Failure to do so may result in failed requests.
 
 7. On the **Roles** tab, you can [assign one or more roles](https://support.profisee.com/wikis/profiseeplatform/assign_user_roles) to an account.
 

@@ -12,9 +12,8 @@ The following list contains the default Claims Mappings and Client IDs for comm
 
 If your OIDC provider is not listed, consult your OIDC provider's documentation for a list of claims.
 
-OIDC providers not listed are compatible with the Profisee platform as long as their claims conform to OIDC standards.  
-  
-Profisee does not currently support SAML-based protocols.
+> [!NOTE]
+> OIDC providers not listed are compatible with the Profisee platform as long as their claims conform to OIDC standards. Profisee does not currently support SAML-based protocols.
 
 ### Azure AD/Entra
 
@@ -31,9 +30,8 @@ Profisee does not currently support SAML-based protocols.
 | Email  Address | http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name |
 | Groups | groups |
 
-Your Azure AD Client ID and Tenant ID are located in the [Azure AD web portal](https://azure.microsoft.com/en-us/features/azure-portal/) under **Azure Active Directory** > **App Registrations**.    
-  
-You must update your Azure Application Registration with the optional Groups claim in order to use Groups claims in Profisee. Navigate to your registration, then follow **Token configuration** > **Add groups claim** > **Select group types to include** and select [Groups](https://support.profisee.com/wikis/profiseeplatform/Managing_security_in_Profisee_using_Entra_ID_Groups) assigned to the application.
+> [!NOTE]
+> Your Azure AD Client ID and Tenant ID are located in the Azure AD web portal under Azure Active Directory > App Registrations . You must update your Azure Application Registration with the optional Groups claim in order to use Groups claims in Profisee. Navigate to your registration, then follow Token configuration > Add groups claim > Select group types to include and select Groups assigned to the application.
 
 ### Google
 
@@ -50,7 +48,8 @@ You must update your Azure Application Registration with the optional Groups cla
 | Email  Address | http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress |
 | Groups | groups |
 
-Your Google Client ID is located in the [Google Developer console](http://console.developers.google.com) under **Credentials** >**OAuth 2.0 Client IDs**. No Tenant ID is required.
+> [!NOTE]
+> Your Google Client ID is located in the Google Developer console under Credentials > OAuth 2.0 Client IDs . No Tenant ID is required.
 
 ### Okta
 
@@ -69,8 +68,7 @@ Your Google Client ID is located in the [Google Developer console](http://consol
 
 Your **Okta Client ID** is located in the [Okta web application](https://www.okta.com/login/) under **Applications**. Your Tenant ID is located under **API** > **Authentication Servers**. Your **Okta Authority URL** is the Issuer URI of the Okta Authorization Server that you are using.
 
-These claims mappings are for a normal Okta authority URL. If you are using a custom authentification server instead of the default, your claims mappings may vary.  
-  
-Okta groups may require additional configuration. See [here](https://support.profisee.com/wikis/profiseeplatform/Managing_security_in_Profisee_using_Okta_Groups) for more information on managing security in Profisee using Okta groups.
+> [!NOTE]
+> These claims mappings are for a normal Okta authority URL. If you are using a custom authentification server instead of the default, your claims mappings may vary. Okta groups may require additional configuration. See here for more information on managing security in Profisee using Okta groups.
 
 ---

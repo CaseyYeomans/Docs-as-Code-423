@@ -36,7 +36,8 @@ For customers upgrading **from** v2022**R1** and earlier. There are two chang
 1. Purview Collections integration necessitated changes in the ARM template, container and deployment templates. Please **DO** review the upgrade instructions posted below **before** you start the upgrade process.
 2. History tables improvements - you will need to run this immediately **after** the upgrade, one time **only**.
 
-If upgrading to version 2022.r1 or later from version 2020.R1 or 2020.R2, contact your customer support representative before upgrading.
+> [!NOTE]
+> If upgrading to version 2022.r1 or later from version 2020.R1 or 2020.R2, contact your customer support representative before upgrading.
 
 Please read through the upgrade instructions both here and in our Support portal and prepare for the upgrade process. The instructions below are combined for both Purview Collections and the History table improvements.
 

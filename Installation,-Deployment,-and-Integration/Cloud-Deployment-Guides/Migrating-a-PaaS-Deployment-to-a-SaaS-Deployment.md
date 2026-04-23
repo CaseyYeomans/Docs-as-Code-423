@@ -2,23 +2,22 @@
 
 An existing PaaS or IaaS deployment can be migrated to a ProfiseeCloud SaaS instance as long as you have a valid SQL Server BACPAC file. This process is handled primarily by Profisee staff and can migrate large data sets of over 1,000,000 records, which may take several hours to finish processing. Ensure you set aside sufficient time for the migration to complete.
 
-This process completely replaces any data in the SaaS instance with no opportunity for recovery.
+> [!WARNING]
+> This process completely replaces any data in the SaaS instance with no opportunity for recovery.
 
 To migrate your deployment:
 
 1. Create a SQL Server BACPAC file that contains your migrated instance using the instructions below in the section "Creating a BACPAC file for your deployment."
 
-If the source deployment is a different version of Profisee than the target instance, the instance will inherit the version of the migrated deployment. To prevent migrating to a downgraded version of Profisee, either upgrade the source instance before generating the BACPAC file, or upgrade the SaaS instance to your desired version after restoring the database.  
-  
-**Profisee versions older than version *2022.R2* are not supported.**
+> [!NOTE]
+> If the source deployment is a different version of Profisee than the target instance, the instance will inherit the version of the migrated deployment. To prevent migrating to a downgraded version of Profisee, either upgrade the source instance before generating the BACPAC file, or upgrade the SaaS instance to your desired version after restoring the database. Profisee versions older than version 2022.R2 are not supported.
 
 2. Create a storage account in your Azure cloud to store the BACPAC file, and upload the BACPAC file to the storage account.
 3. Provide the access key to this storage account to your Profisee support representative, who will configure your ProfiseeCloud SaaS instance.
 4. Once Profisee has confirmed that your instance is available, you may begin operating your ProfiseeCloud SaaS instance.
 
-All solution changes (such as models and strategies) should be deployed to the target instance **after** the instance is confirmed to be available by Profisee.  
-  
-Due to the instance’s authentication configuration and our internal policies, Profisee is not able to log into the application to deploy these objects. These updated artifacts must be deployed by the client
+> [!NOTE]
+> All solution changes (such as models and strategies) should be deployed to the target instance after the instance is confirmed to be available by Profisee. Due to the instance’s authentication configuration and our internal policies, Profisee is not able to log into the application to deploy these objects. These updated artifacts must be deployed by the client
 
 ## Creating a BACPAC File for your Deployment
 

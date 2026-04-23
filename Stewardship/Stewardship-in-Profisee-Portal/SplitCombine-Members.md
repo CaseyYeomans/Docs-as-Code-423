@@ -10,7 +10,8 @@ The Split/Combine tab allows a user to merge multiple members in a match group i
 3. Click the **Split/Combine** tab in the top-right corner of the Match Stewardship window to navigate to the Split/Combine view.
 4. Right-click the desired member to open the dropdown menu. Alternatively, click the ellipsis icon to the left of the member to open the dropdown menu.
 
-If you want to create a new group from multiple members within a match group, CTRL+Click multiple members to highlight them, then right-click any of the selected members.  Alternatively, click the ellipsis icon to the left of a highlighted member to open the dropdown menu.
+> [!NOTE]
+> If you want to create a new group from multiple members within a match group, CTRL+Click multiple members to highlight them, then right-click any of the selected members.  Alternatively, click the ellipsis icon to the left of a highlighted member to open the dropdown menu.
 
 5. Click **New Group From Selected**.  
    ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i722e8f7787e2e8b2.png)
@@ -25,6 +26,7 @@ You can organize members by manually moving them into desired match groups. Usi
 4. Click a match group to view its contained members.
 5. Click the ellipsis icon to the left of any the member you want to move. Alternatively, right-click the member you want to move.
 
-If you want to move multiple members within a match group, CTRL+Click all desired members to highlight them, then click the ellipsis icon to the left of a highlighted member to open the dropdown menu.  Alternatively, right-click any of the highlighted members to open to dropdown menu.
+> [!NOTE]
+> If you want to move multiple members within a match group, CTRL+Click all desired members to highlight them, then click the ellipsis icon to the left of a highlighted member to open the dropdown menu.  Alternatively, right-click any of the highlighted members to open to dropdown menu.
 
 6. Hover over the **Move Selected to Group** field, then select a listed match group to move the members to that group. Only match groups listed under the Match Groups field will appear in this list.![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i96b1fcb3e478e7a8.png)

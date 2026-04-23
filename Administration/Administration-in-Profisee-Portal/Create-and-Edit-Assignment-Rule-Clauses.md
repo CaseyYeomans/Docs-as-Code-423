@@ -51,6 +51,7 @@ The Assignment Execution Mode determines which records have rules run on them. T
 * **On Create Only** runs rules on newly created members.
 * **On Update and on Demand** runs rules when a member is updated through interactive updates (this can be editing on the portal, on the entity grid, etc.) or staging, and when rules are run on demand for the whole entity.
 
-You cannot use an assignment rule that executes *On Create* to update a recursive Domain-Based Attribute (self-referencing in the same entity) to itself, as the Code value is not yet generated.
+> [!CAUTION]
+> You cannot use an assignment rule that executes On Create to update a recursive Domain-Based Attribute (self-referencing in the same entity) to itself, as the Code value is not yet generated.
 
 ---

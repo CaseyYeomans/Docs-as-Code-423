@@ -17,7 +17,8 @@ The **RecordDataContext** type provides all of the identifying attributes of a r
 
 The **RecordDataContext** type is used extensively throughout workflow activities to identify the record record that is being processed by the workflow and its associated activities. In addition to the key to the record, the context includes the **EntityId** which also includes the entity’s associated Model.
 
-With release 7 of the platform, the Profisee moved to a ***single model per instance*** approach. Therefore, the Model identifier is a static value and can be ignored. It is maintained merely for backward compatibility support.
+> [!NOTE]
+> With release 7 of the platform, the Profisee moved to a single model per instance approach. Therefore, the Model identifier is a static value and can be ignored. It is maintained merely for backward compatibility support.
 
 When Profisee’s real-time event management subsystem triggers a workflow to be started, it passes a **RecordDataContext** object to the workflow so the workflow knows on which record record to operate. When passed by the real-time event management subsystem, the **TransactionId** is set to the transaction that caused the event to be triggered. In doing so, the workflow then has access to the transaction to allow it to be reversed based on task activities associated with the workflow.
 

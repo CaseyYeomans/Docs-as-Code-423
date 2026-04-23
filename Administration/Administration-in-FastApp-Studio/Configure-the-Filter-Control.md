@@ -13,18 +13,21 @@ To configure the Filter control:
 1. Follow the instructions in [Add a New Portal Application Page](https://support.profisee.com/wikis/profiseeplatform/add_a_new_portal_application_page), adding a Filter control.
 2. Under Properties, enter a name for the filter control in the **Name** field.
 
-The Name field is for administrative reference only and does not display to users when the control is viewed in the portal.
+> [!NOTE]
+> The Name field is for administrative reference only and does not display to users when the control is viewed in the portal.
 
 3. Enter a descriptive, user friendly name for the filter control in the **Label** field.
 
-The label displays to users when they view the control in the portal. Other names for controls are available for reference during configuration only.
+> [!NOTE]
+> The label displays to users when they view the control in the portal. Other names for controls are available for reference during configuration only.
 
 4. Select one of the following options:
 
 * Domain-Based Attribute Filter
 * Free-Form Attribute Filter
 
-After the filter control is configured, it must be linked to another control. If it is not linked, the control will display in the portal application page, but it will not perform any filtering actions. For more information on linking the filter control, see [Link Controls](https://support.profisee.com/wikis/profiseeplatform/link_controls).
+> [!NOTE]
+> After the filter control is configured, it must be linked to another control. If it is not linked, the control will display in the portal application page, but it will not perform any filtering actions. For more information on linking the filter control, see Link Controls .
 
 #### **Domain-Based Attribute Filter**
 

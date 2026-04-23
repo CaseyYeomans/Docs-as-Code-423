@@ -46,7 +46,8 @@ To grant these privileges:
 
  Your configured permissions should now appear as shown in the figure below: ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i8dfdadd66613db45.png)
 
-If you do not have administrative rights to your Azure Active Directory resource, the Grant admin consent button will be disabled, and you will not be able to directly assign the specified roles and you will see the warnings as shown in the figure below. You will need to request that your AAD administrator consent to your request for the assigned roles.![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i61ce9de0817a68c1.png)
+> [!NOTE]
+> If you do not have administrative rights to your Azure Active Directory resource, the Grant admin consent button will be disabled, and you will not be able to directly assign the specified roles and you will see the warnings as shown in the figure below. You will need to request that your AAD administrator consent to your request for the assigned roles.
 
 The last step is setting up your App Registration is to generate a client secret that represents the password that is used by Profisee to authenticate itself before being granted access to Purview and AAD. To generate a new client secret, perform the following steps:
 
@@ -56,7 +57,8 @@ The last step is setting up your App Registration is to generate a client secre
 4. Give your secret a**Description** and select an **Expires** duration,  then click**Add**.![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-if6a03bde76ccd36e.png)
 5. After the client secret has been created, you must immediately copy the secret Value because you are only able to see and copy this value once. After the page refreshes, the secret will be gone, and you must create a new secret to access another value. ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i73a38ee13c8dc54e.png)
 
-   Save the secret in a safe location like a password vault or secured text file as you will need it later during the Profisee deployment.
+   > [!NOTE]
+   > Save the secret in a safe location like a password vault or secured text file as you will need it later during the Profisee deployment.
 6. Return to the Overview tab of your App Registration and copy the Application (client) ID value and store it in a safe and convenient location as you will need it while deploying Profisee.![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i5108488524cb8d26.png)
 
 Now that you have an App Registration fully configured, you can move on to setting up your Purview account.
@@ -89,7 +91,8 @@ Perform the following steps to assign the **Purview Data Curator** and **Collec
 4. Select **Collections**, then **Role Assignments**.
 5. Click the icon to the right of the role assignment name (**Purview Data Curator,** **Collections Admin,** or **Data Product Owners**).
 
-The **Data Product Owners**rile is in the Data Catalog within the Roles section of a Governance domain. Unlike Collections, domains can exist by themselves, but they can also have a parent domain. If they have a parent domain, the roles can be inherited from that parent, or they can be set separately on that child domain.  ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i5f8ad9522ff1f19e.png)
+> [!NOTE]
+> The Data Product Owners rile is in the Data Catalog within the Roles section of a Governance domain. Unlike Collections, domains can exist by themselves, but they can also have a parent domain. If they have a parent domain, the roles can be inherited from that parent, or they can be set separately on that child domain.
 
 6. Type the name of the App Registration you created in the *Creating an Azure App Registration for use by Profisee*section above.
 

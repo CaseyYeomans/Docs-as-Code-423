@@ -34,7 +34,8 @@ The table below lists operator types supported by the data quality validation ru
 | equals | 1 | no | The attribute is assigned a value equal to the specified constant or attribute parameter. |
 | equals blank | none | no | The attribute is assigned a null value. |
 
-If data quality rules are not applied as expected, check the **Event Log** for error information.
+> [!CAUTION]
+> If data quality rules are not applied as expected, check the Event Log for error information.
 
 ---
 

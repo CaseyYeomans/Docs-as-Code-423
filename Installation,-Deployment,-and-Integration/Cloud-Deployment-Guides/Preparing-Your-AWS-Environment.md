@@ -27,7 +27,8 @@ Deploying enterprise-grade application like the Profisee Platform in the cloud c
 * **Database provisioning and performance**. Typically, you will want to engage with DBAs and database architects familiar with provisioning databases – specifically Microsoft SQL Server – in the AWS environment. These experts, along with Profisee Professional Services and Support, can help ensure the database is sized and resourced properly for your data and workload needs.
 * **Networking and domain administration skills.** Deployment of the Profisee Platform involves several intra- and inter-cloud networking and routing considerations. You should ensure that your deployment team includes, or engages with, corporate networking experts when planning out your deployment strategy.
 
-Although Profisee’s Professional Services and Support teams are trained on the general procedures related to cloud deployments, many decisions and requirements to which organizations are bound involve resources, policies, and general institutional knowledge that is best obtained through corporate subject matter expertise. Thus, Profisee strongly encourages the cross-functional approach described above.
+> [!NOTE]
+> Although Profisee’s Professional Services and Support teams are trained on the general procedures related to cloud deployments, many decisions and requirements to which organizations are bound involve resources, policies, and general institutional knowledge that is best obtained through corporate subject matter expertise. Thus, Profisee strongly encourages the cross-functional approach described above.
 
 ### Establishing Your IAM Policies and Permissions
 
@@ -36,7 +37,8 @@ Once you have identified your deployment team members, you must assign them the 
 * The article [Minimum IAM policies](https://eksctl.io/usage/minimum-iam-policies/) describes a least-privileges approach to performing the most common use-cases related to creating and managing your EKS cluster.
 * The article [What are the least privileges required for a user to perform creates, deletes, modifications, backup, and recovery for an Amazon RDS DB instance](https://aws.amazon.com/premiumsupport/knowledge-center/rds-iam-least-privileges/) covers the minimal requirements to provision and manage the database during a Profisee Platform deployment.
 
-Profisee has verified that the policies and permissions guidance described in these articles allows you and your team to successfully manage the deployment process in most typical installations. Because there are virtually endless combinations deployment scenarios, the policy recommendations described above may need to be revisited based on your specific deployment needs and corporate security and networking requirements.
+> [!NOTE]
+> Profisee has verified that the policies and permissions guidance described in these articles allows you and your team to successfully manage the deployment process in most typical installations. Because there are virtually endless combinations deployment scenarios, the policy recommendations described above may need to be revisited based on your specific deployment needs and corporate security and networking requirements.
 
 ### Choosing & Installing Your Deployment Tooling
 

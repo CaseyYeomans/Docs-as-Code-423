@@ -35,9 +35,8 @@ To edit a presentation view:
 
       The Display Width is in pixels.
 
-When the presentation view is deployed in Profisee FastApp portal, the first column in an entity grid is displayed as a hyperlink that opens the Open Member form for each row. Though this is not dependent on the attribute used, it is recommended to choose an attribute that can easily identify a member as the first column in the entity grid, such as the **Name** attribute.  
-  
-If the attribute in the first column is a Link or Match Group attribute configured for hyperlink, the attribute will open to the associated link or match group control instead of the Open Member form.
+> [!NOTE]
+> When the presentation view is deployed in Profisee FastApp portal, the first column in an entity grid is displayed as a hyperlink that opens the Open Member form for each row. Though this is not dependent on the attribute used, it is recommended to choose an attribute that can easily identify a member as the first column in the entity grid, such as the Name attribute. If the attribute in the first column is a Link or Match Group attribute configured for hyperlink, the attribute will open to the associated link or match group control instead of the Open Member form.
 
 6. Edit the information on the **Filters** tab.
 

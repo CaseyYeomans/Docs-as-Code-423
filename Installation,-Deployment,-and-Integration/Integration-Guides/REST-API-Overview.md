@@ -18,15 +18,8 @@ A user can access and modify entity members and access metadata hosted in their
 
 The Profisee REST API provides an OpenAPI standard documentation page built upon Swagger. The documentation page may be accessed using the endpoint **/rest/docs**. Each endpoint requires the user's Client ID (x-API-key) for authentication when initiating a call. Your ClientID can be found in **Accounts and Teams** in Profisee FastApp Studio. Click the endpoint to expand the documentation and try out the call by clicking the **Try It Out** button.
 
-Note the following when working with data using the REST API:  
-  
-• The ClientID used to make calls using the API must have sufficient permissions for the entity being accessed. Ensure this user obtains these permissions directly or from a team. Permissions gained from an Active Directory group are not sufficient.  
-  
-• If you change the logging level within the .json file, the logging level is not automatically updated. You must reset IIS for this change to take place.  
-  
-• If your entity name is a GUID (e.g. *6D0B2662-B989-439E-BD91-174F30AA942A*) or a number value (e.g. 123) you must use the internal ID or GUID in your REST requests instead of the name.  
-  
-• When using endpoints that allow an array of requested items, take into account limitations in your local network for string length, payload length, and URI length.
+> [!NOTE]
+> Note the following when working with data using the REST API: • The ClientID used to make calls using the API must have sufficient permissions for the entity being accessed. Ensure this user obtains these permissions directly or from a team. Permissions gained from an Active Directory group are not sufficient. • If you change the logging level within the .json file, the logging level is not automatically updated. You must reset IIS for this change to take place. • If your entity name is a GUID (e.g. 6D0B2662-B989-439E-BD91-174F30AA942A ) or a number value (e.g. 123) you must use the internal ID or GUID in your REST requests instead of the name. • When using endpoints that allow an array of requested items, take into account limitations in your local network for string length, payload length, and URI length.
 
 ### Odata Filter Operations
 

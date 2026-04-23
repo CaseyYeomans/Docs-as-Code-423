@@ -14,9 +14,8 @@ To model a new Recursive Relationship:
 5. Select the attribute for the child entity.
 6. Define the **Predicate**, **Role**, and **Role Plural** for the child entity.![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i4f91acc46bcf6a3f.png)
 
-The **Predicate** is a user-defined specification of how an entity is related to the other entity.   
-  
-The **Role** is the singular version of how this entity should be named. This should typically be the same as the entity name. For instance, if your entity is named **Account,**the Role name would be **Account**, and the **Role plural** would be named **Accounts.**
+> [!NOTE]
+> The Predicate is a user-defined specification of how an entity is related to the other entity. The Role is the singular version of how this entity should be named. This should typically be the same as the entity name. For instance, if your entity is named Account, the Role name would be Account , and the Role plural would be named Accounts.
 
 7. Select the Parent entity card and define the **Predicate** and **Role** for the parent entity.
 8. Click **Save** to save and create the relationship.

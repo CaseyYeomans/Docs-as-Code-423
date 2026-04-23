@@ -9,14 +9,13 @@ To model a new Parent-Child Relationship:
 3. Right click **Relationships** beneath the entity, then hover over **Create**.
 4. Select **Parent Relationship** or **Child Relationship**.  
    ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-ib1e621230ed82fb1.png)
-
-   Selecting **Child Relationship** will automatically designate the selected entity as the Parent entity. Selecting **Parent Relationship** will designate the selected entity as the Child entity.
+   > [!NOTE]
+   > Selecting Child Relationship will automatically designate the selected entity as the Parent entity. Selecting Parent Relationship will designate the selected entity as the Child entity.
 5. Select the **Entity and Attribute** for the child entity.
 6. Define the **Predicate**, **Role**, and **Role Plural** for the child entity.
 
-The **Predicate** is a user-defined specification of how an entity is related to the other entity.   
-  
-The **Role** is the singular version of how this entity should be named. This should typically be the same as the entity name. For instance, if your entity is named **Account,**the Role name would be **Account**, and the **Role plural** would be named **Accounts.**
+> [!NOTE]
+> The Predicate is a user-defined specification of how an entity is related to the other entity. The Role is the singular version of how this entity should be named. This should typically be the same as the entity name. For instance, if your entity is named Account, the Role name would be Account , and the Role plural would be named Accounts.
 
 ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i86f18f7c359de6d6.png)
 

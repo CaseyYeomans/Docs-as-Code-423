@@ -66,10 +66,7 @@ High availability is achieved by providing failover at the database tier and the
 
 When running on premise, a SQL Server AlwaysOn Availability Group provides high-availability at the database tier. When running on Azure, Azure SQL DB inherently provides high-availability.
 
-Note that some processes are highly stateful and must be reconfigured (manual or automated) to run on another node when the designated processing node is down and failover is required. These processes include:  
-  
-  -Matching and survivorship  
-  -Event processing  
-  -Workflows
+> [!CAUTION]
+> Note that some processes are highly stateful and must be reconfigured (manual or automated) to run on another node when the designated processing node is down and failover is required. These processes include: -Matching and survivorship -Event processing -Workflows
 
 ---

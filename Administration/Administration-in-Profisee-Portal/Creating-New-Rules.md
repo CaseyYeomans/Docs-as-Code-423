@@ -17,23 +17,13 @@ Profisee Administrators can create new rules to be used in Profisee Portal from 
   + On Update Only
 * If desired, click the **X** icon to the left of a clause to delete it from the rule or click the **X** to the right of an expression to delete just the expression. You can also click and drag clauses to reorder their execution within the rule.
 
-Expressions can only be nested 10 levels deep. Rules that contain more than 10 'where' clauses will prevent rules from running properly.
+> [!CAUTION]
+> Expressions can only be nested 10 levels deep. Rules that contain more than 10 'where' clauses will prevent rules from running properly.
 
 5. Optionally, enter a **Display Description** that is displayed when a data quality issue is viewed by a user.
 6. Click **Save** or **Save and Close** when you are finished creating the clauses.
 
-• Note that you cannot create multiple rules for the same attribute. You must create multiple clauses under the same rule instead.  
-  
-• Previously in rules hosted in FastApp Studio, you could assign a value in a DateTime attribute to a Date attribute. To do so now, you can use the expression: TODATE ( TEXT ( [DateTimeAttribute] ) )  
-  
-• Previously in rules hosted in FastApp Studio, you could use the operators **Is valid** or **Is not valid** in validation rules.  
-  
-To perform a similar function (prior to 2025 R4), you can use the clauses:   
-    If: FALSE when: [Attribute] = NULL  
-    If: TRUE when: [Attribute] <> NULL  
-  
-To perform a similar function (in 2025 R4 or later), use "" in the expression instead of NULL.  
-  
-• Previously in rules hosted in FastApp Studio, you could use the *Validation Status* value on a Parent record in a child entity data quality rule to see whether a rule was valid. To perform a similar function, create a user-defined attribute on a parent entity such as [Is Valid], then create an assignment rule on the parent entity that sets the [Is Valid] attribute to "Yes" if ValidationStatusID = 1 or "No" when ValidationStatusID = 2. Then change the rule on the child entity to reference the parent entity's [Is Valid] attribute. Since this is a user-defined attribute on the parent entity, it will be monitored for changes to the value and will invoke the dependent record processing.
+> [!NOTE]
+> • Note that you cannot create multiple rules for the same attribute. You must create multiple clauses under the same rule instead. • Previously in rules hosted in FastApp Studio, you could assign a value in a DateTime attribute to a Date attribute. To do so now, you can use the expression: TODATE ( TEXT ( [DateTimeAttribute] ) ) • Previously in rules hosted in FastApp Studio, you could use the operators Is valid or Is not valid in validation rules. To perform a similar function (prior to 2025 R4), you can use the clauses: If: FALSE when: [Attribute] = NULL If: TRUE when: [Attribute] <> NULL To perform a similar function (in 2025 R4 or later), use "" in the expression instead of NULL. • Previously in rules hosted in FastApp Studio, you could use the Validation Status value on a Parent record in a child entity data quality rule to see whether a rule was valid. To perform a similar function, create a user-defined attribute on a parent entity such as [Is Valid], then create an assignment rule on the parent entity that sets the [Is Valid] attribute to "Yes" if ValidationStatusID = 1 or "No" when ValidationStatusID = 2. Then change the rule on the child entity to reference the parent entity's [Is Valid] attribute. Since this is a user-defined attribute on the parent entity, it will be monitored for changes to the value and will invoke the dependent record processing.
 
 ---

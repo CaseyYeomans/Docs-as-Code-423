@@ -9,7 +9,8 @@ To configure a Report View for a Portal page:
    ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i64896c2535670c58.png)
 3. Paste the URL for an existing Power BI report into the **URL** field.
 
-To locate the URL for a Power BI report, navigate to the [Power BI Portal Homepage](https://app.powerbi.com/home) and select a report. On the report, select **File > Embed report > Website or portal**. Copy the link that reads "Here's a link you can use to embed this content."![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i139bcdcea1000ebf.png)
+> [!NOTE]
+> To locate the URL for a Power BI report, navigate to the Power BI Portal Homepage and select a report. On the report, select File > Embed report > Website or portal . Copy the link that reads "Here's a link you can use to embed this content."
 
 3. Click **Save and Close**.
 

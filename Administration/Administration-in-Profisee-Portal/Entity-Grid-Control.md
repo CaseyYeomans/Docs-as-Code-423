@@ -15,7 +15,8 @@ The Entity Grid control displays entity data in a tabular format with sorting, f
 * **Enable Lookup-Before-Create**: Apply lookup validation before allowing creation of new members
 * **Prohibit Add if LubC Fails**: Block member creation when lookup validation fails.
 
-**Lookup-Before-Create** will not be enabled (even if selected) if the **View** does not correlate to a configured **Results View** on a matching strategy on the same entity. See the page on the [Lookup Tab](https://support.profisee.com/wikis/profiseeplatform/configuring_the_lookup_tab) for more information about Lookup-Beofre-Create.
+> [!CAUTION]
+> Lookup-Before-Create will not be enabled (even if selected) if the View does not correlate to a configured Results View on a matching strategy on the same entity. See the page on the Lookup Tab for more information about Lookup-Beofre-Create.
 
 User permissions determine add and edit capabilities regardless of form selection.
 

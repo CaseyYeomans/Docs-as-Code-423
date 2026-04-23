@@ -8,7 +8,8 @@ Once Profisee FastApp Studio has been installed, you must log in before you can 
 3. If more than one authentication provider is configured, select a provider to redirect to. If only one authentication provider is configured, you will be automatically redirected.
 4. Sign-in to the authentication provider.
 
-The available providers will vary per environment based on the authentication providers [configured by your system administrator](https://support.profisee.com/wikis/profiseeplatform/configuration_manager_new_installation). If only one provider has been configured, you will be automatically redirected to that provider and will not need to select a provider to continue.
+> [!NOTE]
+> The available providers will vary per environment based on the authentication providers configured by your system administrator . If only one provider has been configured, you will be automatically redirected to that provider and will not need to select a provider to continue.
 
 * **Using Windows Active Directory**: Depending on your browser configuration, you may be prompted to enter your username and password. If so, enter the credentials associated with your Profisee account and submit. To automatically sign in without entering your credentials, you must [set the authentication page as a trusted web site](https://effortz.com/add-website-browsers-trusted-sites-windows-os/) in your default browser. Once this is set as a trusted site, you will automatically log in using the credentials you previously used to log in. Depending on your organization's policies, you may need to work with your system administrator to configure a trusted web site.
 * **From Azure Active Directory**: When logging in from Azure Active Directory, you will be redirected to the Azure Active Directory login page. The authentication experience will be determined by your organization's configuration of Azure Active Directory, which may include multi-factor authentication.
@@ -16,6 +17,7 @@ The available providers will vary per environment based on the authentication pr
 
 Once successfully authenticated, you will be redirected to a confirmation screen. You have successfully logged in and can navigate back to FastApp Studio.
 
-You cannot log into the Profisee platform until a system administrator adds you as a user. If you cannot log into the platform after successful authentication, contact your system administrator.
+> [!NOTE]
+> You cannot log into the Profisee platform until a system administrator adds you as a user. If you cannot log into the platform after successful authentication, contact your system administrator.
 
 ---

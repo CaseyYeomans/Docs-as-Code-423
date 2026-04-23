@@ -25,7 +25,8 @@ The external DNS address of the Profisee Platform must be added to your corporat
 2. Add the specified DNS name to your corporate DNS server. You will need to create a [CNAME](https://en.wikipedia.org/wiki/CNAME_record) (i.e. alias) that refers to the **DNS name** of the load balancer of your provisioned EKS Cluster. The figure below shows the AWS [A record](https://support.dnsimple.com/articles/a-record/) for the provisioned site. The CNAME created in your DNS of choice maps your external DNS name to the A record name of the EKS load balancer.  
    ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i328d52e54ef20319.png)
 
-There is a *chicken-and-egg paradox* that must be dealt with above. You must define your external DNS name and update your DNS server **before** the EKS cluster is provisioned. But you are not able to know the A record of the load balancer until **after** the EKS cluster has provisioned it. However, it is harmless to provide a temporary (i.e. fictitious) A record when first creating your DNS entry. You may then return to your DNS server after the EKS cluster has been provisioned and update the CNAME to the (now known) A record. Once your CNAME has been corrected, users referring to it will successfully be redirected to the proper server in your cluster.
+> [!NOTE]
+> There is a chicken-and-egg paradox that must be dealt with above. You must define your external DNS name and update your DNS server before the EKS cluster is provisioned. But you are not able to know the A record of the load balancer until after the EKS cluster has provisioned it. However, it is harmless to provide a temporary (i.e. fictitious) A record when first creating your DNS entry. You may then return to your DNS server after the EKS cluster has been provisioned and update the CNAME to the (now known) A record. Once your CNAME has been corrected, users referring to it will successfully be redirected to the proper server in your cluster.
 
 ### Establishing Your EKS Cluster & Node Group Requirements
 
@@ -35,7 +36,8 @@ The figure below shows a snippet from the **cluster.yaml** file template that is
 
 ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i1f90c1a00cf0527a.png)
 
-**IMPORTANT**: Your EKS cluster **must** be in the same region as your EBS volume. Take note of the decisions made in [Planning Your File Storage Configuration](https://support.profisee.com/wikis/profiseeplatform/planning_your_file_storage_configuration_aws) when specifying your cluster’s region.
+> [!NOTE]
+> IMPORTANT : Your EKS cluster must be in the same region as your EBS volume. Take note of the decisions made in Planning Your File Storage Configuration when specifying your cluster’s region.
 
 Understanding your Profisee cluster node group requirements involve answering the following question:
 
@@ -88,11 +90,13 @@ Minimal requirements for a Profisee web/application server include:
 
 Recommended specifications for your application servers are subject to the considerations specified above. Additional scaling and workload guidance can be found in the ***System Requirements for Profisee Server*** section of the [Profisee Platform Installation Guide](https://profisee.magentrixcloud.com/wikis/profiseeplatform/system_requirements_for_profisee_server) on the [Profisee Customer Portal](https://profisee.magentrixcloud.com/aspx/CustomerHome).
 
-If you are a prospect considering Profisee and do not yet have a login to the Profisee Customer Portal, work with your account executive to obtain a PDF copy of this document for your consideration and planning purposes.
+> [!NOTE]
+> If you are a prospect considering Profisee and do not yet have a login to the Profisee Customer Portal, work with your account executive to obtain a PDF copy of this document for your consideration and planning purposes.
 
 You should set the availability zone (AZ) to an AZ that exists within the region you specified for your cluster.
 
-EKS can spread worker nodes across multiple AZs. Such scaling and high availability strategies are beyond the scope of this document. You should refer to detailed documentation with AWS including but not limited to [Creating Kubernetes Auto Scaling Groups for Multiple Availability Zones](https://aws.amazon.com/blogs/containers/amazon-eks-cluster-multi-zone-auto-scaling-groups/) for guidance on complex scaling and failover configurations.
+> [!NOTE]
+> EKS can spread worker nodes across multiple AZs. Such scaling and high availability strategies are beyond the scope of this document. You should refer to detailed documentation with AWS including but not limited to Creating Kubernetes Auto Scaling Groups for Multiple Availability Zones for guidance on complex scaling and failover configurations.
 
 ### Setting Your Cluster Node Initial & Maximum Allocation
 

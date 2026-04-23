@@ -15,7 +15,8 @@ See: <https://docs.microsoft.com/en-us/azure/aks/limit-egress-traffic>
 
 Azure documentation for: [az network firewall](https://docs.microsoft.com/en-us/cli/azure/network/firewall?view=azure-cli-latest), [az network public-ip](https://docs.microsoft.com/en-us/cli/azure/network/public-ip?view=azure-cli-latest), [az network firewall ip-config](https://profisee1-my.sharepoint.com/personal/brynn_lewis_profisee_com/Documents/BrynnLe/Documents/az network firewall ip-config)
 
-As previously mentioned, this example uses Azure Firewall as a sample “next hop” appliance for AKS. If using Azure Firewall, modify as appropriate to your security needs.
+> [!NOTE]
+> As previously mentioned, this example uses Azure Firewall as a sample “next hop” appliance for AKS. If using Azure Firewall, modify as appropriate to your security needs.
 
 ```
 az network firewall create -l <region> -n <AzureFirewall> -g <AppResourceGroup> 

@@ -11,7 +11,8 @@ If you don’t have an existing Profisee instance, Microsoft Fabric users can ac
 * **Admins**: Before enabling Profisee MDM for your organization, please review the **Profisee and Fabric Workload Deployment** steps below.
 * **Users**: If your organization has already set up Profisee in Fabric, skip ahead to **Creating a Profisee Data Product** to get started.
 
-If you are using a non-SaaS deployment of Profisee, administrators must take the [additional steps outlined here](https://support.profisee.com/wikis/profiseeplatform/integrating_a_non-saas_instance_with_fabric) before Fabric integration can begin.
+> [!NOTE]
+> If you are using a non-SaaS deployment of Profisee, administrators must take the additional steps outlined here before Fabric integration can begin.
 
 ## Profisee and Fabric Workload Deployment (Administrators)
 
@@ -21,19 +22,14 @@ Before your organization can access Profisee MDM, an administrator must configur
 2. Go to the [**Fabric Homepage**](https://app.fabric.microsoft.com) > **Workloads** (left) > **More workloads** > **Profisee MDM (preview)** > **Add Workload**.![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i74017fdcbd7a5b29.png)![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-icd60cdcbc7c1405b.png)
 3. Add the workload to a premium capacity when prompted.
 
-If you do not have an existing capacity, you will need to create one.  
-  
-Check which region is your Fabric home region by going to the [Fabric Homepage](https://app.fabric.microsoft.com), then clicking top right on the question mark, then **About Fabric**. Your region is listed at the bottom of the popup.  
-![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i48d79de9f3d911bf.png)  
-Create a Fabric Premium capacity in the same region. There may be some delay between capacity creation and the ability to select it. Refresh the page after a few minutes if it does not appear immediately.   
-![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i536bebb74e56e1a3.png)  
-Once the capacity is available, select it and continue to the next step.
+> [!NOTE]
+> If you do not have an existing capacity, you will need to create one. Check which region is your Fabric home region by going to the Fabric Homepage , then clicking top right on the question mark, then About Fabric . Your region is listed at the bottom of the popup. Create a Fabric Premium capacity in the same region. There may be some delay between capacity creation and the ability to select it. Refresh the page after a few minutes if it does not appear immediately. Once the capacity is available, select it and continue to the next step.
 
 4. Click **Add Workload**, then click **Continue**when prompted by the **Additional authentication...** popup.![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-id17968bf5d8c95e9.png)
 5. Approve the permissions needed by the Fabric workload in your tenant when prompted. Once approval has been granted, the **Add Workload** button changes to **Manage Capacities**.![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i523df416a2889524.png)
 
-You may decide whether or not to select the **Consent on behalf of your organization** option when prompted. If the Global Admin does not consent to the required permissions, individual users will be prompted to instead. Depending on your organization’s security posture and internal requirements, you may or may not be permitted to grant GA consent. Please consult internally which approach best fits your organization.![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-ic078965ca1a70952.png)  
-If this option is not selected, see **Permissions** below.
+> [!CAUTION]
+> You may decide whether or not to select the Consent on behalf of your organization option when prompted. If the Global Admin does not consent to the required permissions, individual users will be prompted to instead. Depending on your organization’s security posture and internal requirements, you may or may not be permitted to grant GA consent. Please consult internally which approach best fits your organization. If this option is not selected, see Permissions below.
 
 ### Permissions
 

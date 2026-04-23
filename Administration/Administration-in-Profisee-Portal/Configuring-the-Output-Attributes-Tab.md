@@ -24,7 +24,8 @@ Select and create attributes manually, or use the AI-Assign function. These attr
 * **Match date**—A free-form date attribute indicating the date and time that the match cluster formed.
 * **Match user**—A free-form text attribute identifying the account name for the user that last changed the match cluster status. This attribute is only populated for records matched incrementally.
 
-It is recommended to populate all output attributes for matching and survivorship. Auto-Assigning is recommended for users with AI capabilities enabled. It is recommended to use one of the built-in prompts when using the AI Assign feature..![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i78ef66870bd8ec3c.png)
+> [!NOTE]
+> It is recommended to populate all output attributes for matching and survivorship. Auto-Assigning is recommended for users with AI capabilities enabled. It is recommended to use one of the built-in prompts when using the AI Assign feature..
 
 ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i4d49985bcbf9ab6f.png)
 

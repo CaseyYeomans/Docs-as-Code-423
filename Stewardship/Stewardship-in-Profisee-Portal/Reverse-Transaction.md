@@ -11,9 +11,8 @@ As long as the transaction did not create or delete the record, and as long as n
 
 ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i343ed6da7813922c.png)
 
-If there are unsaved changes on a form, you will receive a prompt before the transaction is reversed. If you choose to continue with the reversal, the changes will be lost.  
-  
-If you reverse a transaction that includes a code change, the transaction reverses successfully, but the form closes and the record is not found.
+> [!NOTE]
+> If there are unsaved changes on a form, you will receive a prompt before the transaction is reversed. If you choose to continue with the reversal, the changes will be lost. If you reverse a transaction that includes a code change, the transaction reverses successfully, but the form closes and the record is not found.
 
 Changes to that record are rolled back. When finished, a new transaction is created to indicate that a transaction has been reversed.
 

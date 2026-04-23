@@ -8,8 +8,9 @@ This landing page displays detailed status information related to the monitored 
 
 For more information, refer to the [Hangfire online documentation](https://docs.hangfire.io/en/latest/).
 
-When restarting any service during maintenance or configuration, all web browsers with Hangfire windows open must be closed to allow for the service to start in a healthy state.
-
-Note that a hangfire detail may display the message <VALUE IS TOO BIG>. This does not indicate an error and can be ignored.
+> [!CAUTION]
+> When restarting any service during maintenance or configuration, all web browsers with Hangfire windows open must be closed to allow for the service to start in a healthy state.
+> [!NOTE]
+> Note that a hangfire detail may display the message <VALUE IS TOO BIG>. This does not indicate an error and can be ignored.
 
 ---

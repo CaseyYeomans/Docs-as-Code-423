@@ -11,7 +11,8 @@ This guide details the four major steps that must be taken before the Profisee 
 
 Once you have finished these five steps, your instance of the Profisee Platform is ready for use.
 
-This guide includes information for getting started with Profisee FastApp Studio and Profisee FastApp Portal. If your instance requires work with auxiliary software such as [Profisee Integrator](https://support.profisee.com/wikis/profiseeplatform/Before_you_begin) or the [Profisee REST API](https://support.profisee.com/wikis/profiseeplatform/profisee_rest_api_overview), refer to the documentation for those tools specifically.
+> [!NOTE]
+> This guide includes information for getting started with Profisee FastApp Studio and Profisee FastApp Portal. If your instance requires work with auxiliary software such as Profisee Integrator or the Profisee REST API , refer to the documentation for those tools specifically.
 
 ## Installing the Platform
 
@@ -85,7 +86,8 @@ Depending on the controls used and preferences for the way data displays, you ma
 
 Once you have created your FastApp Portal application, you can launch the portal by entering  *http://[serverName]/Profisee* into the URL bar of your browser.
 
-As of version 2021.R2, Internet Explorer is not a compatible web browser for navigating FastApp Portal applications.
+> [!NOTE]
+> As of version 2021.R2, Internet Explorer is not a compatible web browser for navigating FastApp Portal applications.
 
 From here, you can [navigate the Profisee FastApp Portal](https://support.profisee.com/wikis/profiseeplatform/portal_overview) to work within the previously configured forms, entity grids, tasks, and hierarchies previously established during the portal configuration process.
 

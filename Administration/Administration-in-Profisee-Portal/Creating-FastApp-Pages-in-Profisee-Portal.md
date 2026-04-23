@@ -52,7 +52,8 @@ For example, you can configure a filter control to use the Color domain attribut
 
 After the entity is linked, configure a receiving attribute in the **Links** panel. Only valid attributes will appear in the list. When a receiving attribute is selected, it receives the filter information and applies the filter control to the selected attribute in the entity grid.
 
-You can only link Filter to Grid, Filter to Filter, or Grid to Grid.
+> [!NOTE]
+> You can only link Filter to Grid, Filter to Filter, or Grid to Grid.
 
 ## Saving Your Page
 

@@ -27,10 +27,12 @@ Filter on "Profisee\_Dev", "Profisee\_Test", etc. In the examples below, the num
    **OR** use an **expression** to specify "active\_directory," if those groups are sourced from AD.![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i6beed2dfd9472f28.png)
 2. Click the Assignments tab, click the **Assign** button, select **Assign to Groups**, then click **Assign** beside each group that should belong to that environment; ideally anything that starts with Profisee\_Dev, if you've followed the example above for your Dev environment. Please do not add users here. If there are users, either remove them (so they get added through the group you are assigning to this application) or convert those user assignments to groups.
 
-Note that in our tests, the **getFilteredGroups** expression filter did not work. Our authentication service expects a claim for each group. We believe the getFilteredGroups returns a multi-string value, which fails to be interpreted.
+> [!NOTE]
+> Note that in our tests, the getFilteredGroups expression filter did not work. Our authentication service expects a claim for each group. We believe the getFilteredGroups returns a multi-string value, which fails to be interpreted.
 
 Once this setup is done, please have the SuperAdmin in the respective Profisee environment log in to Fast App Studio, go to **Administration**, then **Accounts and Teams**, then **Accounts**, then **New**. Make sure to add the full group name under **Group Accounts** (lower box) as configured in Okta, then click OK. Double click the newly added group (or select it and click **Edit**), click **Roles** and assign a Profisee role to the group. Click **Save & Close** to finish the setup for this group. Repeat for any other groups.
 
-Note: You can add multiple groups in the User or Groups window, comma-separated.
+> [!NOTE]
+> Note: You can add multiple groups in the User or Groups window, comma-separated.
 
 ---

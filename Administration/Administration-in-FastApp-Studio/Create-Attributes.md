@@ -18,7 +18,8 @@ You can edit an attribute within an entity from the Advanced Modeling tree view
 
        4. Edit any of the following (for unpublished attributes):
 
-Only the following fields can be edited for a previously published attribute: Name, Description, Display width, Restricted, Values must be unique, Default Value, Clear on Clone, Cascading Delete.
+> [!NOTE]
+> Only the following fields can be edited for a previously published attribute: Name, Description, Display width, Restricted, Values must be unique, Default Value, Clear on Clone, Cascading Delete.
 
 * **Name**: The name of the attribute.
 * **Description**: Optional text describing the attribute

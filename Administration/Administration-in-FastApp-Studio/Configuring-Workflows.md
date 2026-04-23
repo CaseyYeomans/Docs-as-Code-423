@@ -10,9 +10,8 @@ To configure a workflow:
 2. Select the workflow version under the workflow.
 3. On the Workflow Manager toolbar, click **Edit workflow version configuration**. Alternatively, right-click the workflow version and select **Edit Configuration**.
 
-If the workflow is a template workflow, you can create different configurations for various entities by clicking the **New**button under **Entity configuration** and selecting the entity defined for this workflow.  
-  
-If the workflow is not a template workflow, the workflow will have a single configuration for the entity defined for the workflow. You cannot add additional entity configurations for non-template workflows.
+> [!NOTE]
+> If the workflow is a template workflow, you can create different configurations for various entities by clicking the New button under Entity configuration and selecting the entity defined for this workflow. If the workflow is not a template workflow, the workflow will have a single configuration for the entity defined for the workflow. You cannot add additional entity configurations for non-template workflows.
 
 The Workflow Configuration dialog appears.
 
@@ -25,9 +24,8 @@ The Workflow Configuration dialog appears.
 
 **Run-as User:** The account that runs the workflow
 
-Ensure the run-as user has been assigned all required permissions directly or through a team. Run-as users require [unattended authentication](https://support.profisee.com/wikis/profiseeplatform/edit_accounts) for use with workflows. Permissions inherited from an AD group are ignored when running a workflow on behalf of another user.  
-  
-If no run-as user is selected, you cannot save your workflow configuration.![](https://Profisee.magentrixcloud.com/sys/StaticAsset/Read/file-ibd01e5fbc8331f61.png)
+> [!CAUTION]
+> Ensure the run-as user has been assigned all required permissions directly or through a team. Run-as users require unattended authentication for use with workflows. Permissions inherited from an AD group are ignored when running a workflow on behalf of another user. If no run-as user is selected, you cannot save your workflow configuration.
 
 **Total Activities**: The number of different assignment steps included in the workflow
 
@@ -63,7 +61,8 @@ Name, ID, Version, and Total Activities are coded into the workflow during devel
 6. Repeat the previous step for each activity in the workflow.
 7. Click the **Enabled or Disabled** button to enable or disable the workflow.
 
-   When a workflow is disabled, instances of the workflow are not triggered in response to the data changes specified in the associated workflow subscriber configuration. However, users can continue to perform tasks in currently running instances of the disabled workflow.
+   > [!NOTE]
+   > When a workflow is disabled, instances of the workflow are not triggered in response to the data changes specified in the associated workflow subscriber configuration. However, users can continue to perform tasks in currently running instances of the disabled workflow.
 8. Click **Save**.
 
 ---

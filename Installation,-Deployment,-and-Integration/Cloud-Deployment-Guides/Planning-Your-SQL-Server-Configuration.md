@@ -27,7 +27,8 @@ In the process diagram above, there exists a single decision point: do you want
 * Define the Profisee database name that will be used by the platform to store all of your platform artifacts and data. If using a name other than the default – **Profisee** – then you should record this name as it will be needed to specify the **SQL Server Database Name** property of the ARM template.
 * Open the firewall on the target SQL Server machine to the outbound IP address of the Profisee cluster.
 
-The firewall on your SQL Server instance cannot be configured until the Profisee cluster is provisioned. This introduces a chicken-and-egg paradox; the cluster cannot provision its database until the firewall is opened but the firewall cannot be opened until you know the outbound IP address of the cluster. Fortunately, there is a window of time where this can be performed. See [Configuring the Firewall on SQL Server for Your Profisee Cluster](https://support.profisee.com/wikis/profiseeplatform/configuring_the_firewall_on_sql_server_for_your_profisee_cluster) for details on when and how to open up the firewall to the Profisee cluster.
+> [!NOTE]
+> The firewall on your SQL Server instance cannot be configured until the Profisee cluster is provisioned. This introduces a chicken-and-egg paradox; the cluster cannot provision its database until the firewall is opened but the firewall cannot be opened until you know the outbound IP address of the cluster. Fortunately, there is a window of time where this can be performed. See Configuring the Firewall on SQL Server for Your Profisee Cluster for details on when and how to open up the firewall to the Profisee cluster.
 
 As part of this planning process, you should have identified the following properties of the Profisee ARM template:
 

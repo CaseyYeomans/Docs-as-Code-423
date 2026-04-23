@@ -24,6 +24,7 @@ Upgrade an existing database and Web application in place if you want users to a
 
 ![](https://Profisee.magentrixcloud.com/contents/assets/images/ExclamationMark.png)During the upgrade process, ensure you do not re-use an old folder location for your previous instance, as it may contain subscriber DLLs from older versions.
 
-Any time you run through Configuration Manager on the primary server, you must also run through Configuration Manager on all nodes in the cluster. Failure to do so will cause errors to occur on nodes that have not been reconfigured.
+> [!CAUTION]
+> Any time you run through Configuration Manager on the primary server, you must also run through Configuration Manager on all nodes in the cluster. Failure to do so will cause errors to occur on nodes that have not been reconfigured.
 
 ---

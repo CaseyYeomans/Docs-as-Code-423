@@ -2,7 +2,8 @@
 
 Publishing model metadata using Advanced Modeling applies the metadata changes to the system model. Any metadata not present in the system model is deleted, so it is important to carefully review the information in the Publish to Server dialog before applying the changes.
 
-**IMPORTANT**: When you publish the edited model with Replace the model selected, any changes you have made are applied to the version on the server. This includes any attributes that you have added, deleted or changed. If you have deleted an entity or attribute, or altered a data type, you could lose existing data in a populated model that has been modified.
+> [!CAUTION]
+> IMPORTANT : When you publish the edited model with Replace the model selected, any changes you have made are applied to the version on the server. This includes any attributes that you have added, deleted or changed. If you have deleted an entity or attribute, or altered a data type, you could lose existing data in a populated model that has been modified.
 
 To publish the system model to the server:
 

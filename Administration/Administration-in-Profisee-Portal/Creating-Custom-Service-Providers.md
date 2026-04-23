@@ -105,7 +105,8 @@ Each output maps to a field the script returns. Outputs appear in the Integratio
 * For flattened arrays, use numbered suffixes: CompanyName1, CompanyName2, CompanyName3.
 * Available output types: String, Float, Integer, Boolean, Date.
 
-**Array Flattening Decision**: If the API returns arrays of results, decide upfront how many items to capture. Each array item becomes a separate set of numbered output fields. For example, capturing the top 3 results with Name and Score fields creates 6 outputs: Name1, Score1, Name2, Score2, Name3, Score3. Confirm this number with the customer before building the artifact.
+> [!CAUTION]
+> Array Flattening Decision : If the API returns arrays of results, decide upfront how many items to capture. Each array item becomes a separate set of numbered output fields. For example, capturing the top 3 results with Name and Score fields creates 6 outputs: Name1, Score1, Name2, Score2, Name3, Score3. Confirm this number with the customer before building the artifact.
 
 ## 4. Generate GUIDs
 
@@ -125,7 +126,8 @@ a1b2c3d4-5678-4abc-9def-123456789abc (use as Script ID)
 
 f9e8d7c6-5432-4bba-8765-abcdef012345 (use as Service Provider ID)
 
-**CRITICAL**: Do Not Reuse GUIDs. Every artifact must have unique GUIDs. Reusing GUIDs from another artifact will cause import conflicts. Always generate fresh GUIDs for each new service provider.
+> [!WARNING]
+> CRITICAL : Do Not Reuse GUIDs. Every artifact must have unique GUIDs. Reusing GUIDs from another artifact will cause import conflicts. Always generate fresh GUIDs for each new service provider.
 
 ## 5. Build the Artifact JSON
 
@@ -166,7 +168,8 @@ Each script record contains the JavaScript code that will be executed. The Id mu
 ]
 ```
 
-**Script Content Escaping**: The *scriptContent* value is a JSON string. All double quotes inside the JavaScript must be escaped as \". Newlines must be encoded as \r\n. It is strongly recommended to write your script in a normal .js file first, test the logic, and then convert it to an escaped JSON string as the final step
+> [!NOTE]
+> Script Content Escaping : The scriptContent value is a JSON string. All double quotes inside the JavaScript must be escaped as \". Newlines must be encoded as \r\n. It is strongly recommended to write your script in a normal .js file first, test the logic, and then convert it to an escaped JSON string as the final step
 
 ### 5.3 Service Provider Record
 
@@ -232,7 +235,8 @@ The services dictionary defines one or more executable operations. Each key is a
 }
 ```
 
-Set the *maximumRecordsPerRequest* to 1 for APIs that process one record at a time (most common). Set higher for batch APIs that accept multiple records per call. This value controls how many records appear in the input.records array.
+> [!NOTE]
+> Set the maximumRecordsPerRequest to 1 for APIs that process one record at a time (most common). Set higher for batch APIs that accept multiple records per call. This value controls how many records appear in the input.records array.
 
 ## 6. Define Inputs in Detail
 
@@ -376,7 +380,8 @@ The script is the heart of the service provider. It receives input, calls the AP
 
 ### 8.1 Critical Script Rules
 
-**MANDATORY**: These rules prevent runtime errors in the Profisee Connect execution environment. Violating any of these rules will cause BadRequest errors or silent failures that are difficult to debug.
+> [!CAUTION]
+> MANDATORY : These rules prevent runtime errors in the Profisee Connect execution environment. Violating any of these rules will cause BadRequest errors or silent failures that are difficult to debug.
 
 | # | Rule | Details |
 | --- | --- | --- |

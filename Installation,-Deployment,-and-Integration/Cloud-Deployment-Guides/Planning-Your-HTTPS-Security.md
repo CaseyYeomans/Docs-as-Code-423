@@ -2,7 +2,8 @@
 
 For clients of the Profisee cluster to communicate securely with the platform, you must enable HTTPS communications when provisioning the cluster. Although Profisee supports insecure communications over HTTP, this is intended to simplify evaluations and internal non-production uses where security of the data and communications is not essential.
 
-Profisee strongly recommends the use of HTTPS for **all** installed instances of the platform. it is essential that all production instances enable secure communications via HTTPS to ensure the safety and integrity of the data and the solution.
+> [!NOTE]
+> Profisee strongly recommends the use of HTTPS for all installed instances of the platform. it is essential that all production instances enable secure communications via HTTPS to ensure the safety and integrity of the data and the solution.
 
 The following process diagram outlines the decision points and actions related to HTTPS security:
 

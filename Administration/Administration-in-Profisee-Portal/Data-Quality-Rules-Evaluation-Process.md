@@ -36,6 +36,7 @@ The platform rules engine automatically runs rules against an entity if data cha
 
 The dependency may be caused by a reference in a clause parameter or condition.
 
-If data quality rules are not applied as expected, check the **Event Log** for error information.
+> [!CAUTION]
+> If data quality rules are not applied as expected, check the Event Log for error information.
 
 ---

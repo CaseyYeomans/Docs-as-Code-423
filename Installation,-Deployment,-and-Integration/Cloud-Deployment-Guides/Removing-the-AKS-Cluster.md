@@ -9,6 +9,7 @@ Deleting the entire Resource Group will de-provision the cluster, but there may 
 3. Select the AKS Cluster from the resource list. This resource is labeled with the **Kubernetes service** resource type.
 4. Click **Delete** from the toolbar at the top of the screen.![](https://Profisee.magentrixcloud.com/sys/StaticAsset/Read/file-i5add726097453602.png)
 
-Note that even though this process avoids deleting the resource group containing the cluster, deleting the cluster will necessarily remove the infrastructure resource group that is created with the cluster. This cluster is named **MC\_OriginalResourceGroup\_[ClusterName]\_[location]**and contains the infrastructure resource.
+> [!NOTE]
+> Note that even though this process avoids deleting the resource group containing the cluster, deleting the cluster will necessarily remove the infrastructure resource group that is created with the cluster. This cluster is named MC\_OriginalResourceGroup\_[ClusterName]\_[location] and contains the infrastructure resource.
 
 ---

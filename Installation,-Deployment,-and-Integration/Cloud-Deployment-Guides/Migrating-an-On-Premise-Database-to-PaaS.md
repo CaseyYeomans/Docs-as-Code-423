@@ -5,11 +5,13 @@ If you have an existing on-premise installation of the Profisee platform, you ca
 1. Delete any service accounts from your Profisee installation.
 2. Remove any staging tables from your current Profisee installation. *If you are using Profisee Platform version 2021.R3 or higher, you may skip this step*
 
-If you would like to retain your current staging tables to use in your PaaS deployment, you can export your staging tables in Profisee FastApp Studio, then import them into your new installation after deployment.
+> [!NOTE]
+> If you would like to retain your current staging tables to use in your PaaS deployment, you can export your staging tables in Profisee FastApp Studio, then import them into your new installation after deployment.
 
 3. Locate your Profisee database in your database management software (SQL, AWS, Azure, etc) and deploy it to Azure SQL.
 
-For most database management software, this can be done by right-clicking your database and selecting an option labeled "Deploy database to Azure SQL" or something similar. Refer to your database management software documentation for detailed instructions.
+> [!NOTE]
+> For most database management software, this can be done by right-clicking your database and selecting an option labeled "Deploy database to Azure SQL" or something similar. Refer to your database management software documentation for detailed instructions.
 
 4. Delete any "phantom databases" that are left behind after migration. These "phantom databases" will not impact deployment, but they may appear in menus after deployment, causing confusion to users down the line.
 

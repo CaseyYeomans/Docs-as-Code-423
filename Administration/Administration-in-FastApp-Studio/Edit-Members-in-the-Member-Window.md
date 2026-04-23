@@ -40,4 +40,5 @@ Right-click a column header in the Member window to open the menu.
 
 ---
 
-The popup form to edit a record is sized based on the longest value displayed. This will stretch up to 50% of your screen width before a horizontal scroll bar is displayed. Please be aware of this when viewing numbers and long set values, as it may appear as if numbers are missing.
+> [!NOTE]
+> The popup form to edit a record is sized based on the longest value displayed. This will stretch up to 50% of your screen width before a horizontal scroll bar is displayed. Please be aware of this when viewing numbers and long set values, as it may appear as if numbers are missing.

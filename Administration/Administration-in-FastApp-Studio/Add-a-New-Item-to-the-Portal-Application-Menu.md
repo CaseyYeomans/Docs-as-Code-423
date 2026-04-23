@@ -24,7 +24,8 @@ All page names, including the default page names, are editable.
 2. In the **Icon** column, select the icon to be used for the item by inputting a name into the **Name** field and a [fontawesome class string](https://support.profisee.com/wikis/profiseeplatform/edit_entities) into the **Icon name** field.
 3. In the **Type** column, select **Internal** if the page is included in the FastApps Portal application or **External** if the page is located on a different site.
 
-When configuring an external page to the FastApp, it is important to use *https://* formatting before the URL to ensure proper conversion. E.g. *https://bing.com*.
+> [!NOTE]
+> When configuring an external page to the FastApp, it is important to use https:// formatting before the URL to ensure proper conversion. E.g. https://bing.com .
 
 4. In the **Page** column, select the page from the list to link with the menu item (for internal pages), or type the URL of the page to access (for external pages).
 

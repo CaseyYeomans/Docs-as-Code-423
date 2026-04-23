@@ -1,6 +1,7 @@
 # Upgrading XAMLX Files
 
-NOTE: Unless you are using a Source Code Control System (SCCS), create backups of your .xamlx files; the files will be overwritten during the upgrade process. Profisee strongly recommends using an SCCS for managing source code for all custom development using the SDK.
+> [!CAUTION]
+> NOTE: Unless you are using a Source Code Control System (SCCS), create backups of your .xamlx files; the files will be overwritten during the upgrade process. Profisee strongly recommends using an SCCS for managing source code for all custom development using the SDK.
 
 Previous versions of the MaestroWorkflowService.xamlx files must be upgraded using the utility *Profisee.Services.Sdk.UpgradeUtilities.exe* before being republished and registered. This utility automatically replaces references in the .xamlx files with the appropriate references for the current release.
 
@@ -16,6 +17,7 @@ To upgrade your \*.xamlx files and MaestroWorkflowService project:
 
 **Example**: Profisee.Services.Sdk.UpgradeUtilities.exe /XAMLX /FILE:”C:\filePath” /RECURSIVE
 
-Pressing Enter after typing Profisee.Services.Sdk.UpgradeUtilities.exe displays help for the command and all switches.
+> [!NOTE]
+> Pressing Enter after typing Profisee.Services.Sdk.UpgradeUtilities.exe displays help for the command and all switches.
 
 ---

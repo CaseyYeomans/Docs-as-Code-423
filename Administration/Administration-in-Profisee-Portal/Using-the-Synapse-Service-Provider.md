@@ -78,7 +78,8 @@ The Authentication section allows modification of:
 * Credential information
 * Vault configuration
 
-Changing the authentication scheme may require updating credentials before the configuration can be saved.
+> [!NOTE]
+> Changing the authentication scheme may require updating credentials before the configuration can be saved.
 
 ### Connection
 
@@ -108,7 +109,8 @@ When creating an integration strategy with a Synapse service configuration, you 
   + **Import** Data flows from Synapse to Profisee
   + **Export** Data flows from Profisee to Synapse
 
-Each strategy supports only one direction. To enable bidirectional data flow, create separate strategies for import and export.
+> [!NOTE]
+> Each strategy supports only one direction. To enable bidirectional data flow, create separate strategies for import and export.
 
 * Object Configuration
   + **Object Name**: Select the database table or view for data operations
@@ -119,7 +121,8 @@ Each strategy supports only one direction. To enable bidirectional data flow, cr
   + **On-Demand Asynchronous**: Manual execution with background processing
   + **Scheduled**: Time-based execution using cron expressions
 
-Note that continuous execution is not supported for import operations.
+> [!NOTE]
+> Note that continuous execution is not supported for import operations.
 
 ## Export Strategies (Profisee to Synapse)
 

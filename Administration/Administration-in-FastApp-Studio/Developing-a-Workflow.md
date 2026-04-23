@@ -9,11 +9,13 @@ The steps to developing a workflow are as follows:
 1. Install the Profisee SDK Developer Tools package.
 2. Install the workflow activities toolbox using Visual Studio.
 
-The workflow activities toolbox can be found in the root folder where the Profisee SDK has been installed. The file name is Profisee.Services.Sdk.Workflow.PackageInstaller.vsix. This adds the Profisee-specific workflow activities to the toolbox in Visual Studio.
+> [!NOTE]
+> The workflow activities toolbox can be found in the root folder where the Profisee SDK has been installed. The file name is Profisee.Services.Sdk.Workflow.PackageInstaller.vsix . This adds the Profisee-specific workflow activities to the toolbox in Visual Studio.
 
 1. [Develop the workflow using Visual Studio](https://support.profisee.com/wikis/profiseeplatform/build_a_workflow_with_visual_studio). Use the Profisee workflow activities to perform MDM-specific data management functions.
 
-You must develop and build the workflow outside of Profisee using Visual Studio. Many workflow features will not function correctly unless the workflow is properly designed. For additional information, refer to the SDK Developer Tools documentation for details on developing workflows.
+> [!NOTE]
+> You must develop and build the workflow outside of Profisee using Visual Studio. Many workflow features will not function correctly unless the workflow is properly designed. For additional information, refer to the SDK Developer Tools documentation for details on developing workflows.
 
 1. [Build the workflow in Visual Studio](https://support.profisee.com/wikis/profiseeplatform/build_a_workflow_with_visual_studio).
 2. [Register the workflow](https://support.profisee.com/wikis/profiseeplatform/registering_workflows).

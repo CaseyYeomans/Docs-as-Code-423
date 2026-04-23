@@ -33,9 +33,8 @@ This utility is used to transfer data and model structures from MDS 2014, 2016, 
 
 Record usage in the MDS source system is based on a count of consolidated and leaf members for the selected version. Explicit hierarchies are structured differently in Profisee, and File attributes are not included in the count, so the number of attributes counted in Profisee will differ from that of MDS.
 
-During migration, entity names are restricted to 50 characters. **However,**entities used to relationships within hierarchies require additional characters, which may cause errors in entities with long names.  
-  
-To avoid these issues, ensure these entity names are no more than 42 characters in length.
+> [!CAUTION]
+> During migration, entity names are restricted to 50 characters. However, entities used to relationships within hierarchies require additional characters, which may cause errors in entities with long names. To avoid these issues, ensure these entity names are no more than 42 characters in length.
 
 ### Required Permissions
 
@@ -67,23 +66,22 @@ To migrate your MDS database to Profisee:
 4. Select the desired data version. Remember that you can only migrate one version of a model from MDS into Profisee.![](https://Profisee.magentrixcloud.com/sys/StaticAsset/Read/file-i880cf3a62c906eef.png)
 5. Click **Start**.![](https://Profisee.magentrixcloud.com/sys/StaticAsset/Read/file-ia2ce6481722461d6.png)If you try to migrate the model when your license limit is exceeded, the **Start** button is disabled. Correct the license issue and restart the utility to continue. Refer to Considerations for details.
 
-Note that **Date** attributes which include the "Show time" property in Maestro will be created and transferred as **Date** values, not **Date Time** values.
+> [!NOTE]
+> Note that Date attributes which include the "Show time" property in Maestro will be created and transferred as Date values, not Date Time values.
 
 ### Entity and Hierarchy Name Length Limit
 
 There is a 50-character limit for a final entity or hierarchy name in the target. If the limit is exceeded, the prompt below appears. Enter a modified name of less than 50 characters in the free-text field.
 
-This name must be unique among all of the names that will be published to the Profisee server inclusive of any entity names that may already exist in the Profisee data model.
+> [!NOTE]
+> This name must be unique among all of the names that will be published to the Profisee server inclusive of any entity names that may already exist in the Profisee data model.
 
 ![](https://Profisee.magentrixcloud.com/sys/StaticAsset/Read/file-ied3262f935746163.png)
 
 If you do not want to rename an entity, select **Skip**. Note that if you skip the rename, the entity will not be created and any hierarchies related to that entity are not created. In addition, any domain-based attributes that relate to this entity are also skipped.
 
-Profisee allows reduced precision for number attributes than what is provided in MDS. Warnings will be returned if precision is reduced, but most data will transfer successfully.  
-  
-For example: a number with 12 decimals in MDS will be created as a number with 8 decimal places in Profisee. Values will be rounded appropriately. If a number value is so large that it will overrun the allowed precision then no values will be transferred in this entity. This can be avoided by temporarily deleting these values in MDS so all other values transfer.  
-  
-For example: an MDS Number that holds 11 decimal places (decimal (27,11) would allow 16 numbers before the decimal and 11 decimal values. If you have a value that large, (total 27 digits) that would not transfer to decimal (26,8) causing all members in the entity to fail.
+> [!NOTE]
+> Profisee allows reduced precision for number attributes than what is provided in MDS. Warnings will be returned if precision is reduced, but most data will transfer successfully. For example: a number with 12 decimals in MDS will be created as a number with 8 decimal places in Profisee. Values will be rounded appropriately. If a number value is so large that it will overrun the allowed precision then no values will be transferred in this entity. This can be avoided by temporarily deleting these values in MDS so all other values transfer. For example: an MDS Number that holds 11 decimal places (decimal (27,11) would allow 16 numbers before the decimal and 11 decimal values. If you have a value that large, (total 27 digits) that would not transfer to decimal (26,8) causing all members in the entity to fail.
 
 # Post-Migration
 

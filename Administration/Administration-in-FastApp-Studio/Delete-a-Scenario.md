@@ -12,7 +12,8 @@ You must stop event processing before you change or delete any event processing 
 5. Select the event scenario in the list.
 6. Click **Delete**.
 
-   **IMPORTANT**: When you delete an event scenario, all event messages associated with the scenario are also deleted, regardless of processing status.
+   > [!CAUTION]
+   > IMPORTANT : When you delete an event scenario, all event messages associated with the scenario are also deleted, regardless of processing status.
 7. Click **Yes** in the pop-up to confirm the deletion.
 8. If any event messages are associated with the scenario, you must confirm that you want to delete them. Click Yes in the **Delete Event Scenario** dialog to confirm.
 

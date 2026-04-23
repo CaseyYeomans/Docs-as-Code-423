@@ -41,7 +41,8 @@ Once you have selected your account, you need to enable API key authentication a
 
 ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-id56a2fc10f67cab3.jpeg)
 
-Unattended authentication must be enabled for the API key to work. Keep your API key secure and do not share it with unauthorized users.
+> [!NOTE]
+> Unattended authentication must be enabled for the API key to work. Keep your API key secure and do not share it with unauthorized users.
 
 ## Step 3: Navigate to the Profisee REST API Page
 

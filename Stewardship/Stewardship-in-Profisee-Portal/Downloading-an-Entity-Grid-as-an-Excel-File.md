@@ -8,6 +8,7 @@ A user in Profisee FastApp Portal can export an entity grid as a .XLSX file to b
 3. Wait for the progress bar on the bottom-right of the screen to finish. You can click **Cancel**to abort the export process.![](https://Profisee.magentrixcloud.com/sys/StaticAsset/Read/file-i3602c14379450b29.png)
 4. Click **Download** after the progress bar finishes to download the exported file.![](https://Profisee.magentrixcloud.com/sys/StaticAsset/Read/file-if5e00d67f3992062.png)
 
-The Download to Excel icon is disabled if the entity grid contains more that 1,048,575 records. A data steward can apply a filter to reduce the number of displayed records in order to export large entity grids.
+> [!NOTE]
+> The Download to Excel icon is disabled if the entity grid contains more that 1,048,575 records. A data steward can apply a filter to reduce the number of displayed records in order to export large entity grids.
 
 ---

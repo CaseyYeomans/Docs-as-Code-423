@@ -14,9 +14,8 @@ To model a new Many to Many Relationship:
 4. Select **Many to Many Relationship** from the list.![](https://Profisee.magentrixcloud.com/sys/StaticAsset/Read/file-i6534ba7c4cd58d6a.png)
 5. Specify the **Predicate**, **Role**, and **Role plural** for the first entity.
 
-The **Predicate** is a user-defined specification of how an entity is related to the other entity.   
-  
-The **Role** is the singular version of how this entity should be named. This should typically be the same as the entity name. For instance, if your entity is named **Account,**the Role name would be **Account**, and the **Role plural** would be named **Accounts.**
+> [!NOTE]
+> The Predicate is a user-defined specification of how an entity is related to the other entity. The Role is the singular version of how this entity should be named. This should typically be the same as the entity name. For instance, if your entity is named Account, the Role name would be Account , and the Role plural would be named Accounts.
 
 6. Click **Entity 2** on the relationship model.
 7. Click the **Entity** dropdown within the **Entity 2 details** panel and select the second entity for which you want to create a relationship.
@@ -25,7 +24,8 @@ The **Role** is the singular version of how this entity should be named. This sh
 10. Specify a name for the relationship. By default, the relationship is named **[Entity 1]<->[Entity 2]**.
 11. Select an entity from the dropdown list to become the bridge entity.
 
-For an entity to be used as a Bridge Entity, it must have the **Create code values automatically** setting enabled using data modeling, and it must have at least one attribute whose domain is Entity 1 and at least one attribute whose domain is Entity 2.
+> [!NOTE]
+> For an entity to be used as a Bridge Entity, it must have the Create code values automatically setting enabled using data modeling, and it must have at least one attribute whose domain is Entity 1 and at least one attribute whose domain is Entity 2.
 
 12. Select a link for Entity 1 and Entity 2. These links are DBAs whose domains correspond to Entity 1 and Entity 2.
 13. Optionally select Bridge properties to be displayed when viewing the relationship on a form.

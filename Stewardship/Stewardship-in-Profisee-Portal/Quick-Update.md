@@ -8,7 +8,8 @@ You can use the Quick Update (Selected) function to change the attribute values
 
 1. Click the ellipsis icon to the left of the record you want to update to open the dropdown dialogue box. Alternatively, right click the row of the record you want to update to open the dropdown dialogue box.
 
-If you want to update multiple records, CTRL + Click multiple records to highlight them, then click the ellipsis next to one of the highlighted records. Alternatively, right click one of the highlighted records.
+> [!NOTE]
+> If you want to update multiple records, CTRL + Click multiple records to highlight them, then click the ellipsis next to one of the highlighted records. Alternatively, right click one of the highlighted records.
 
 2. Click **Quick Update (Selected)** to open the Quick Updated (Selected) menu.
 3. Click the dropdown menu under **Attribute** and select an attribute from the list.

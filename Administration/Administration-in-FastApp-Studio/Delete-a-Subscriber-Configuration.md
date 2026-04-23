@@ -16,7 +16,8 @@ You must stop event processing before you change or delete any event processing 
 2. On the Subscriber Configurations tab, select the subscriber configuration in the list.
 3. Click **Delete**.
 
-   **IMPORTANT**: When you delete a subscriber configuration, all event messages associated with scenarios linked to the subscriber configuration are also deleted, regardless of processing status.
+   > [!WARNING]
+   > IMPORTANT : When you delete a subscriber configuration, all event messages associated with scenarios linked to the subscriber configuration are also deleted, regardless of processing status.
 4. Click **Yes** in the pop-up to confirm the deletion.
 5. If any event messages are associated with the subscriber configuration, you must confirm that you want to delete them. Click **Yes** in the **Delete Subscriber Configuration** dialog.
 

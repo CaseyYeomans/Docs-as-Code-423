@@ -64,7 +64,8 @@ Azure documentation for: [az vm](https://docs.microsoft.com/en-us/cli/azure/vm?v
 az vm create --name <VirtualMachine> --resource-group <AppResourceGroup> --image <Image> -- vnet-name <SpokeVirtualNetwork> --subnet <AppSubnet> --admin-username <USERNAME> --admin-password <PASSWORD> 
 ```
 
-From this point forward, all of the commands should be run from the jumpbox VM.
+> [!NOTE]
+> From this point forward, all of the commands should be run from the jumpbox VM.
 
 ### Install Azure CLI on Jumpbox
 
@@ -144,7 +145,8 @@ helm install -n profisee csi-secrets-store-provider-azure csi-secrets-store-prov
 
 ### Install Workload Identity driver
 
-If running a build from September 2023 or older, you may need to migrate your AAD Pod Identity driver to the Workload Identity driver. For more information, click [here](https://support.profisee.com/wikis/profiseeplatform/Migrating_from_AAD_Pod_Identity_to_Workload_Identity).
+> [!NOTE]
+> If running a build from September 2023 or older, you may need to migrate your AAD Pod Identity driver to the Workload Identity driver. For more information, click here .
 
 ```
 $RESOURCEGROUPNAME=<ResourceGroupName>

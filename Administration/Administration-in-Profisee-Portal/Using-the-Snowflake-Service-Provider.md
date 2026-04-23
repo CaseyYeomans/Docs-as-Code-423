@@ -42,7 +42,8 @@ When adding a new integration strategy using a Snowflake-based Server Configurat
 
 ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i26a4a6083302f669.png)
 
-When creating an integration strategy for the Snowflake service provider, users with a large number of schema and tables may receive a timeout response in the network tab in dev tools when attempting to request tables for the dropdown to select a table in the integration strategy. You can avoid this by limiting access to only the tables and schema needed.
+> [!CAUTION]
+> When creating an integration strategy for the Snowflake service provider, users with a large number of schema and tables may receive a timeout response in the network tab in dev tools when attempting to request tables for the dropdown to select a table in the integration strategy. You can avoid this by limiting access to only the tables and schema needed.
 
 Once added, the Integration Strategy form includes the following options:
 

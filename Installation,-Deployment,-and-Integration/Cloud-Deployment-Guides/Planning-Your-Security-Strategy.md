@@ -23,7 +23,8 @@ If you choose to supply your own certificate, you will need to obtain a valid ce
 
 To configure certificate use for your cluster, extract the text of both certificate and private key from your certificate file (i.e. .pfx file) and record them in the **Settings.yaml** file in preparation for the deployment. You can use utilities such as [OpenSSL](https://www.openssl.org/) to extract the certificate file (.crt) and private key file (.key) from the associated .pfx file.
 
-You will need the password associated with the certificate to extract the certificate and private key details. The provider/creator of the certificate should be able to supply this to you or you can ask them to extract the certificate and private key details and send them to you instead of the .pfx file.
+> [!NOTE]
+> You will need the password associated with the certificate to extract the certificate and private key details. The provider/creator of the certificate should be able to supply this to you or you can ask them to extract the certificate and private key details and send them to you instead of the .pfx file.
 
 The figure below shows the content that must be copied from the extracted certificate and private key files:
 

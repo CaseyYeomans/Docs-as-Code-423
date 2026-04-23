@@ -48,8 +48,5 @@ To create an expression:
 
 *\*Note that this function is only available for users with SQL Server 2025 or higher OR Azure SQL. Users on older versions of SQL Server may be able to see this function, but it will not be functional.*
 
-Though not currently included in the list of functions, NULL can be used in an expression to check for or assign blank values.   
-  
-As an example: if you wanted to create a rule where Name is required, you could create the validation expression  Name<>NULL, which would return a validation issue for any record without a value for Name.   
-  
-Alternatively, if you wanted to create a rule where the Date field *must* be blank, you could create the validation expression Date=NULL.
+> [!NOTE]
+> Though not currently included in the list of functions, NULL can be used in an expression to check for or assign blank values. As an example: if you wanted to create a rule where Name is required, you could create the validation expression Name<>NULL , which would return a validation issue for any record without a value for Name. Alternatively, if you wanted to create a rule where the Date field must be blank, you could create the validation expression Date=NULL .

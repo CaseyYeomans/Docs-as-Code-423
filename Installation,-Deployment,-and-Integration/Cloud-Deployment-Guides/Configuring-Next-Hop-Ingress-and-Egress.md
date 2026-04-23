@@ -22,7 +22,8 @@ The columns in these tables outline the following:
   + **Varies by Type**: Indicates that there are two or more options that the system supports, and the URI varies by the type selected.
 * **Service Endpoint/Endpoint Template**: Identifies the service URI or URI template that should be accessible within the scope of the dependency category. Where the type is Fixed, the URI should be used verbatim. Where the type varies, the <PLACEHOLDER> template should be replaced with the service that applies for the installer’s specific environment OR the type-specific URI.
 
-Where possible we have included the full url: be aware that some Azure resources will only allow you to filter traffic on the base domain (ex. Azure Premium Firewall will allow you to do URL filtering, whereas Standard will not.)
+> [!NOTE]
+> Where possible we have included the full url: be aware that some Azure resources will only allow you to filter traffic on the base domain (ex. Azure Premium Firewall will allow you to do URL filtering, whereas Standard will not.)
 
 ### Kubernetes Infrastructure Egress Requirements
 

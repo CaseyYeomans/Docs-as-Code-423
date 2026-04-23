@@ -2,7 +2,8 @@
 
 There are two methods to allow Connect to work with a firewall.
 
-As an alternative to the instructions below: you can provide Profisee Support with your SQL server's Azure Resource ID, who will submit a private endpoint connection for your approval. Once approved, data will flow straight from Connect to the SQL instance in your Azure tenant.
+> [!NOTE]
+> As an alternative to the instructions below: you can provide Profisee Support with your SQL server's Azure Resource ID, who will submit a private endpoint connection for your approval. Once approved, data will flow straight from Connect to the SQL instance in your Azure tenant.
 
 ## Customer-side with SQL Server 2022 as the Target (Recommended)
 
@@ -44,8 +45,7 @@ This requires port forwarding, as TDS v7.x does not support **Encrypt=Strict**, 
    3. Port 11002, Connect sends traffic to the user's firewall port 11002, which is translated to 1433 and passed to Prod SQL server 2019.
 4. If using Perimeter and Internal firewalls, traffic should be processed to reach the SQL server on whichever port it is expecting traffic.
 
-Do not set **Encrypt Communications** to **Optional**, as this will result in unencrypted TDS v7.x traffic between Profisee and target SQL server.![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i3ba19dc3c1831a6e.png)  
-If **Encrypt Communications** is set to **Mandatory**, this will result in encrypted TDS v7.x traffic between Profisee and target SQL server. A public certificate needs to be installed on the target SQL server.![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i5ddb76bba5acec47.png)  
-If this option is chosen and the certificate on the target SQL server is NOT public (or has expired), then the **Trust Server Certificate** option must be checked.
+> [!CAUTION]
+> Do not set Encrypt Communications to Optional , as this will result in unencrypted TDS v7.x traffic between Profisee and target SQL server. If Encrypt Communications is set to Mandatory , this will result in encrypted TDS v7.x traffic between Profisee and target SQL server. A public certificate needs to be installed on the target SQL server. If this option is chosen and the certificate on the target SQL server is NOT public (or has expired), then the Trust Server Certificate option must be checked.
 
 ---

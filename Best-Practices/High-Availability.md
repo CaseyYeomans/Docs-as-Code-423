@@ -21,7 +21,8 @@ The following table summarizes the deployment models supported for HA and their 
 | **Installed On-Prem (VM)** | ✓ Yes | No limit to number of nodes. Server or VM must be Active Directory / domain-joined. Non-domain-joined environments are not supported. |
 | **Installed Azure VM** | ✓ Yes | No limit to number of nodes. Azure VM must be AD / domain-joined. Use native Azure networking and load balancing. |
 
-**Note:** Profisee formally tests and supports Azure and on-premises deployments. Additional cloud platforms may be supported in future based on customer demand.
+> [!NOTE]
+> Note: Profisee formally tests and supports Azure and on-premises deployments. Additional cloud platforms may be supported in future based on customer demand.
 
 ---
 

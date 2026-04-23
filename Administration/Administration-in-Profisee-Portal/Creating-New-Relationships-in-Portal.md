@@ -28,7 +28,8 @@ After selecting this relationship type:
 
 A **Many to Many Relationship**is a type of relationship between two entities that is established by a Bridge Entity. This bridge entity links the parent entities using two Domain-based Attributes (DBA) to define the related entities. A valid bridge entity must have two Domain-based Attributes that correspond to the domains of the two parent entities.
 
-Example: To demonstrate a relationship between **HmProduct** and **HmVendor**, the entity **HmProductVendor**—which contains the Product and Vendor domains—is used as a bridge entity to define the relationship between them.
+> [!NOTE]
+> Example: To demonstrate a relationship between HmProduct and HmVendor , the entity HmProductVendor —which contains the Product and Vendor domains—is used as a bridge entity to define the relationship between them.
 
 This relationship can be further defined by the use of Bridge Properties, which are derived from the other attributes within the bridge entity. These attributes can be selected to display additional information within the relationship list. In the example above, a data steward would be able to manually define an End Date for the relationship in DateTime format, as well as any Notes about the relationship in plain text form.
 

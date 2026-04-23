@@ -56,7 +56,8 @@ Download the [GitHub Profisee Kubernetes](https://github.com/Profisee/kubernetes
 
 ![](https://Profisee.magentrixcloud.com/sys/StaticAsset/Read/file-i1e0b175c393bf722.png)
 
-Alternatively, you can clone the GitHub repository using GitHub Desktop or GitHub bash. This is not necessary, as you should not be submitting pull requests to this GitHub repository.
+> [!NOTE]
+> Alternatively, you can clone the GitHub repository using GitHub Desktop or GitHub bash. This is not necessary, as you should not be submitting pull requests to this GitHub repository.
 
 ## Step 2: Update Values.yaml file
 
@@ -73,7 +74,8 @@ The following screenshot shows where this information should be updated in the V
 
 ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-idfada8bbf95bb682.png)
 
-The Values.yaml file is white space sensitive. Ensure you maintain consistent indentations and white space.
+> [!NOTE]
+> The Values.yaml file is white space sensitive. Ensure you maintain consistent indentations and white space.
 
 ## Step 3: Set variables in DeployProfiseePlatform.ps1
 
@@ -93,7 +95,8 @@ $resourceGroupName = "resourcegroupname" #The resource group within which the ne
 $resourceGroupLocation = "eastus2" #Which Azure data center will this run in, ex: eastus2. Only necessary if creating a new resource group.
 ```
 
-If you will be using existing Azure resources (ex. Azure SQL Database), it is recommended to create this resource group in the same location/data center as the other resources being used (ex. EastUS2)
+> [!NOTE]
+> If you will be using existing Azure resources (ex. Azure SQL Database), it is recommended to create this resource group in the same location/data center as the other resources being used (ex. EastUS2)
 
 ### SQL Server
 
@@ -115,15 +118,8 @@ $sqlUserName = "username" #Self-explanatory
 $sqlPassword = "password" #Self-explanatory
 ```
 
-• You can use an existing SQL Server to host the Profisee database if preferred versus a dedicated SQL Server for Profisee.  
-  
-• If the database name specified does not exist, Profisee will create a new “empty” database. If the database specified already exists, Profisee will attempt to upgrade that database to the latest Profisee schema. Ensure you backup the existing database prior to running the deployment.  
-  
-• Profisee currently uses SQL Authentication for Azure SQL. A User Name and Password must be specified. Profisee persists this information as encrypted secrets on the AKS cluster and encrypts it securely on the container.  
-  
-• If creating a new SQL Server, you should access that server via the Azure portal and size the server based on the guidelines in Profisee’s Installation and Configuration guide.  
-  
-• Your $sqlServerName must be globally unique. Once you create the server, Azure will reserve your server name for 5 days. If attempting to re-install after deleting the database, installation will fail if you attempt to recreate the database using the reserved server name.
+> [!NOTE]
+> • You can use an existing SQL Server to host the Profisee database if preferred versus a dedicated SQL Server for Profisee. • If the database name specified does not exist, Profisee will create a new “empty” database. If the database specified already exists, Profisee will attempt to upgrade that database to the latest Profisee schema. Ensure you backup the existing database prior to running the deployment. • Profisee currently uses SQL Authentication for Azure SQL. A User Name and Password must be specified. Profisee persists this information as encrypted secrets on the AKS cluster and encrypts it securely on the container. • If creating a new SQL Server, you should access that server via the Azure portal and size the server based on the guidelines in Profisee’s Installation and Configuration guide. • Your $sqlServerName must be globally unique. Once you create the server, Azure will reserve your server name for 5 days. If attempting to re-install after deleting the database, installation will fail if you attempt to recreate the database using the reserved server name.
 
 ### DNS
 
@@ -141,7 +137,8 @@ $domainName = "yourdomain.com" #Typically the root domain of your company/organi
 $hostName = "hostname" #Typically equivalent to the environment or machine name.
 ```
 
-If you are managing DNS outside of Azure, you will need to capture the external IP address of the ingress controller and assign it to the DNS record in your external DNS registry.
+> [!NOTE]
+> If you are managing DNS outside of Azure, you will need to capture the external IP address of the ingress controller and assign it to the DNS record in your external DNS registry.
 
 ### File Repository
 
@@ -157,11 +154,8 @@ $storageAccountName = $resourceGroupName + "files" #(or specify an existing one 
 $storageShareName.ToLower() = "files" #(or specify an existing one if you’re using an existing storage account)
 ```
 
-• You can use an existing storage account if preferred.  
-  
-• You should always use the exiting storage account when upgrading between releases.  
-  
-• Your $storageShareName must be all lowercase.
+> [!NOTE]
+> • You can use an existing storage account if preferred. • You should always use the exiting storage account when upgrading between releases. • Your $storageShareName must be all lowercase.
 
 ### Azure AD Application Registration
 
@@ -179,7 +173,8 @@ $azureClientId = "" #Required if createAppInAzureAd = false. Unused if true.
 $azureClientSecret = "" #Optional if createAppInAzureAd = true. Unused if false.
 ```
 
-Instructions for creating this manually are included below “Special Scenarios” section.
+> [!NOTE]
+> Instructions for creating this manually are included below “Special Scenarios” section.
 
 ### Profisee Administrator Account
 
@@ -211,22 +206,16 @@ $windowsAdminUserName = "winadmin" #Username to create on Windows node VMs.
 $windowsAdminPassword = "Ple@seCh@ngeMe1234!" #Password to create on Windows node VMs.
 ```
 
-• The Linux nodes are used to host some Kubernetes services, as well as the NGINX networking controller. These can typically be lightweight VMs.  
-  
-• The Windows nodes are used to host the Profisee Application. These should be sized in accordance with guidance in the Profisee Installation and Configuration guide.  
-  
-• The Kubernetes Version should generally be the latest GA version available in AKS.  
-  
-• The Windows Admin Password cannot contain numbers.
+> [!NOTE]
+> • The Linux nodes are used to host some Kubernetes services, as well as the NGINX networking controller. These can typically be lightweight VMs. • The Windows nodes are used to host the Profisee Application. These should be sized in accordance with guidance in the Profisee Installation and Configuration guide. • The Kubernetes Version should generally be the latest GA version available in AKS. • The Windows Admin Password cannot contain numbers.
 
 ## Step 5: Execute PowerShell script
 
 1. Run the powershell script: DeployProfiseePlatform.ps1
 2. Wait approximately 20 minutes for the deployment process to finish.
 
-The script will be faster if fewer resources are being created. For example, it will take longer when creating a new SQL Server/database and file repository versus using existing resources.  
-  
-The shell will output the “helm install” command for creating the NGINX networking controller and Profisee environment. It is recommended you capture these commands so you can quickly turn this environment on and off.
+> [!NOTE]
+> The script will be faster if fewer resources are being created. For example, it will take longer when creating a new SQL Server/database and file repository versus using existing resources. The shell will output the “helm install” command for creating the NGINX networking controller and Profisee environment. It is recommended you capture these commands so you can quickly turn this environment on and off.
 
 ## Step 6: Verify Deployment and Troubleshooting
 
@@ -302,7 +291,8 @@ To install the Profisee Platform, run the original helm command:
 helm install profiseeplatform2020r1 profisee/… [Your settings here]
 ```
 
-You can externalize all of the command line switches by adding them to the Settings.json file. Simply remove each setting from the helm command and specify it in the Settings.json file. This allows for the Settings.json file to drive the deployment dynamically and is something that can easily be checked into and managed via source control.
+> [!NOTE]
+> You can externalize all of the command line switches by adding them to the Settings.json file. Simply remove each setting from the helm command and specify it in the Settings.json file. This allows for the Settings.json file to drive the deployment dynamically and is something that can easily be checked into and managed via source control.
 
 ---
 

@@ -12,6 +12,7 @@ When the WaitForEvent activity is reached within a workflow, a workflow bookmark
 
 *\*Argument is required*
 
-Activities derived from CodeActivity<T> and NativeActivity<T> will always have a **Result** OutArgument<T> and zero or more other OutArguments. However, activities derived from CodeActivity and NativeActivity will not have a **Result** OutArgument<T>, but will have zero or more named OutArguments.
+> [!NOTE]
+> Activities derived from CodeActivity<T> and NativeActivity<T> will always have a Result OutArgument<T> and zero or more other OutArguments. However, activities derived from CodeActivity and NativeActivity will not have a Result OutArgument<T>, but will have zero or more named OutArguments.
 
 ---

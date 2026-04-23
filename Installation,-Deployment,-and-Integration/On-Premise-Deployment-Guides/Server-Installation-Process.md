@@ -17,7 +17,8 @@ To install Profisee Server:
      
    ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i568a1931179a90eb.png)
 
-While it is possible to change the drive, directory and "Profisee" subdirectory name, it is not recommended to do so.
+> [!NOTE]
+> While it is possible to change the drive, directory and "Profisee" subdirectory name, it is not recommended to do so.
 
 5. Click **Install.**
 

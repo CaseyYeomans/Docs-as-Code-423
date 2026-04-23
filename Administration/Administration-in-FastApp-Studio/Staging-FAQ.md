@@ -4,20 +4,20 @@ The following are answers to frequently asked questions about Staging administra
 
 * I received an error during staging. How can I tell what happened?
 
-Error detail is logged in the **logging.tsystemlog** table. Examples of things that may cause an error are listed below. When an error occurs, the records that cause the error should remain in the staging table.  
-  
-- DBA value does not exist.  
-- A unique constraint has been violated (constraint specified in Modeling).  
-- A Data Quality rule constraint has been violated.  
-- A Delete staging batch is trying to delete a member that is ‘in use’ (referenced by a different member)
+> [!TIP]
+> Error detail is logged in the logging.tsystemlog table. Examples of things that may cause an error are listed below. When an error occurs, the records that cause the error should remain in the staging table. - DBA value does not exist. - A unique constraint has been violated (constraint specified in Modeling). - A Data Quality rule constraint has been violated. - A Delete staging batch is trying to delete a member that is ‘in use’ (referenced by a different member)
 
-* Why did both valid & invalid records remain in the staging table following an error?
+* > [!NOTE]
+  > Why did both valid & invalid records remain in the staging table following an error?
 
-If the members fail because of a SQL constraint (e.g. constraint specified in Modeling OR member in use) the error is returned by SQL and the entire batch is retained
+> [!TIP]
+> If the members fail because of a SQL constraint (e.g. constraint specified in Modeling OR member in use) the error is returned by SQL and the entire batch is retained
 
-* My error says the ‘error limit is exceeded.’ What does this mean?
+* > [!NOTE]
+  > My error says the ‘error limit is exceeded.’ What does this mean?
 
-The system setting **writing error limit** (default value = 1000) has been exceeded, and processing was stopped.
+> [!TIP]
+> The system setting writing error limit (default value = 1000) has been exceeded, and processing was stopped.
 
 * What permissions are required to process staging?
 

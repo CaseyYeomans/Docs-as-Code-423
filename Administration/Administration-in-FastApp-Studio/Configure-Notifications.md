@@ -2,7 +2,8 @@
 
 The table below displays options and functions for Notifications in System Settings. Notifications are sent to users that are assigned a workflow task. Notifications can be further configured for each individual task assignment in the [Workflow administration](https://support.profisee.com/wikis/profiseeplatform/configuring_send_notification_activities) tab.
 
-For more information on setting up OAuth for Office365, see the official Microsoft documentation [here](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth#use-client-credentials-grant-flow-to-authenticate-smtp-imap-and-pop-connections).
+> [!NOTE]
+> For more information on setting up OAuth for Office365, see the official Microsoft documentation here .
 
 | **Option** | **Function** |
 | --- | --- |

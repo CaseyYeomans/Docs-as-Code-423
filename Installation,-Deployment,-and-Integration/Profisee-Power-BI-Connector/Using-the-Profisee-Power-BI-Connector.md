@@ -11,7 +11,8 @@ To use the Profisee Power BI connector:
 6. Click **Continue** on the following dialogue. Optionally, select the checkbox to prevent this dialogue from appearing in the future. ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i73eb116b1ce7ad15.png)
 7. Enter the URL for your Profisee instance, then click **OK**.![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i3a7b147312aa2f9a.png)
 
-If it is your first time connecting, you will be prompted to log in using an authentication service. For additional information on signing on with authentication, refer to the Help article on [Authentication](https://support.profisee.com/wikis/profiseeplatform/log_in_to_the_profisee_platform).![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-ife4042aa9f37f5fa.png)
+> [!NOTE]
+> If it is your first time connecting, you will be prompted to log in using an authentication service. For additional information on signing on with authentication, refer to the Help article on Authentication .
 
 8. Click **Connect**.  
    ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i5af2d24b088cf2c0.png)  
@@ -21,6 +22,7 @@ If it is your first time connecting, you will be prompted to log in using an aut
 10. Once Loaded, the entities appear in the model view, and you can view the attributes ready for use in Power BI in the **Fields** dialog.  
     ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i3521196d35f2b077.png)
 
-Note that relationships in Profisee are not created in the model in Power BI. After the entities are loaded, you can view the Model and create or modify relationships as desired.
+> [!NOTE]
+> Note that relationships in Profisee are not created in the model in Power BI. After the entities are loaded, you can view the Model and create or modify relationships as desired.
 
 ---

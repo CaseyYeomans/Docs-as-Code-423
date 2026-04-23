@@ -28,7 +28,8 @@ If you have multiple Profisee Server application instances, you can set up multi
 
    https://serverName/profiseeWebApplication/
 
-The following connection string format is obsolete and should no longer be used: *net.tcp://serverName:portNumber/ProfiseeWebApplication*
+> [!CAUTION]
+> The following connection string format is obsolete and should no longer be used: net.tcp://serverName:portNumber/ProfiseeWebApplication
 
 5. Click **Test** to make sure that you have entered your connection information correctly.
 6. Click **Save**.

@@ -32,6 +32,7 @@ To import one or more subscriber configurations:
 
 To import subscriber configurations on a different server, first export the configuration from the source server. Connect to the target server with Profisee, and then import the configuration. Exported configuration files are saved on the client.
 
-As of version 2020 R1, eventing subscriber libraries (DLLs) are stored in the file repository location specified during Configuration Manager setup of your instance under the folder **Profisee\Subscribers**. If upgrading from a prior release, you must copy any custom subscriber files to this new folder.
+> [!NOTE]
+> As of version 2020 R1, eventing subscriber libraries (DLLs) are stored in the file repository location specified during Configuration Manager setup of your instance under the folder Profisee\Subscribers . If upgrading from a prior release, you must copy any custom subscriber files to this new folder.
 
 ---

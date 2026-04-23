@@ -49,7 +49,8 @@ You can also merge two zones into one larger zone.
 1. Select the zone you want to merge.
 2. Click the dropdown arrow next to **Merge** in the top-left of the window and select the direction of the zone you want to merge with. Alternatively, right-click the selected zone and click **Merge [Direction].**
 
-If attempting to merge two zones that already have controls configured, you will receive a prompt asking you to confirm. If you select Yes, the selected zone will be preserved and the other will be deleted.
+> [!CAUTION]
+> If attempting to merge two zones that already have controls configured, you will receive a prompt asking you to confirm. If you select Yes, the selected zone will be preserved and the other will be deleted.
 
 ### Page Properties
 

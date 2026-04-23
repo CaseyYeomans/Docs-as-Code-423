@@ -49,7 +49,8 @@ You make the choice to use and existing VNet by specify the following ARM templa
 * Identify the DNS Service IP address that will support name resolution within the cluster. This is specified in the **Kubernetes DNS Service IP** property.
 * Identify the internal network address range used by the pods (containers) within the cluster. This is specified via the **Kubernetes Docker Bridge Cidr** property.
 
-CIDR stands for Classless Inter-Domain Routing. [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation) provides a compact way of representing an IP address range. Both the **Kubernetes Service Cidr** and **Kubernetes Docker Bridge Cidr** are specified in CIDR notation.
+> [!NOTE]
+> CIDR stands for Classless Inter-Domain Routing. CIDR notation provides a compact way of representing an IP address range. Both the Kubernetes Service Cidr and Kubernetes Docker Bridge Cidr are specified in CIDR notation.
 
 If you leave both the Kubernetes Vnet Name and Kubernetes Vnet Resource Group properties black, you are telling the Profisee AKS deployment process that you want a new dedicated VNet create for this cluster and all of the other related properties referenced above are ignored.
 

@@ -18,6 +18,7 @@ Displays information about triggering events that the event consumer was able to
 
 By using the Date Range 1 and Date Range 2 menus, you can select two periods of time to compare the number of messages that were processed or which failed during those times. The Queued Messages panel is not affected by the date range selections, as that panel displays only the current information for queued messages.
 
-**Date Range 1** and **Date Range 2**, as well as all counts displayed,are based on the timezone set for the server and are not affected by the client's timezone.
+> [!NOTE]
+> Date Range 1 and Date Range 2 , as well as all counts displayed, are based on the timezone set for the server and are not affected by the client's timezone.
 
 ---

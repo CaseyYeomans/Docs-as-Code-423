@@ -35,9 +35,8 @@ You can select any number of these options, but at least one must be selected.
 
 ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i1e38889a75f79038.png)
 
-Ensure that the run-as user specified is not a user that will make changes that trigger the strategy. Otherwise, the strategy will not trigger to avoid an endless loop of changes.  
-  
-Note that changes made to a record by the run-as user will **not** trigger a continuous strategy associated with that record to run. It is recommended to set the run-as user to an account that does not otherwise make changes to Profisee records.
+> [!NOTE]
+> Ensure that the run-as user specified is not a user that will make changes that trigger the strategy. Otherwise, the strategy will not trigger to avoid an endless loop of changes. Note that changes made to a record by the run-as user will not trigger a continuous strategy associated with that record to run. It is recommended to set the run-as user to an account that does not otherwise make changes to Profisee records.
 
 ## Running or Exporting a Strategy
 

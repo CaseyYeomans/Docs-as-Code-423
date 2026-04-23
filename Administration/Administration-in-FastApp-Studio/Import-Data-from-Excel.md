@@ -25,9 +25,8 @@ Create new, free-form text attributes for all unmapped attributes in the Import 
 
 You can discard your mapping information by clicking **Back** in the Edit Column Mappings step. When asked to confirm discarding mappings, click **Yes**.
 
-• You cannot import data values from Excel into attributes which are restricted in Profisee.  
-  
-• To replace values in an entity grid with blank values in an excel file, you must deselect the **Preview** option.
+> [!NOTE]
+> • You cannot import data values from Excel into attributes which are restricted in Profisee. • To replace values in an entity grid with blank values in an excel file, you must deselect the Preview option.
 
 ---
 

@@ -16,15 +16,8 @@ When you create a Service Configuration using this service provider, you must co
 * **Client ID**: Your ClientID for your OAuth2 credentials.
 * **Client Secret**: Your Client Secret for your OAuth2 credentials. This must be a Databricks client secret and not an Azure client secret.
 
-In order to send and receive data from Databricks, the Service Principal (OAuth) or Personal Access Token (API Key) associated with Profisee must have the following permissions:
-
-* MODIFY
-* BROWSE
-* EXECUTE
-* READ VOLUME
-* SELECT
-* USE CATALOG
-* USE SCHEMA
+> [!NOTE]
+> In order to send and receive data from Databricks, the Service Principal (OAuth) or Personal Access Token (API Key) associated with Profisee must have the following permissions: MODIFY BROWSE EXECUTE READ VOLUME SELECT USE CATALOG USE SCHEMA
 
 Once these settings have been selected, click Continue to continue the Service Provider configuration in the Edit Configuration window.
 

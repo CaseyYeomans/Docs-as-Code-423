@@ -30,6 +30,7 @@ You can also click Save to save the page without any controls.
 
 Be sure to link the new portal application page to a menu item in the portal. If you do not link the page to a menu item, you will not be able to access it in the portal.
 
-Once you create a portal application page, you can clone the page and all of its contents by selecting the page and clicking **Copy** in the toolbar. The cloned page will be named "[Page Name] Copy" by default.
+> [!NOTE]
+> Once you create a portal application page, you can clone the page and all of its contents by selecting the page and clicking Copy in the toolbar. The cloned page will be named "[Page Name] Copy" by default.
 
 ---

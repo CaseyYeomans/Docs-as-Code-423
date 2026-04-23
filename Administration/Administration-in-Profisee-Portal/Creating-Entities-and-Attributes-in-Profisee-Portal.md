@@ -21,8 +21,8 @@ To create a new entity in Profisee Portal:
 4. Select the **Type** of the attribute. The attribute type determines the rest of the settings for the attribute.  
    ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i95fbc5f3d54319b2.png)
 
-A **Free Form Attribute**that has entirely user-defined values.  
-A **Domain-Based Attribute (DBA)** is an attribute with values that are populated by records from another entity.
+> [!NOTE]
+> A Free Form Attribute that has entirely user-defined values. A Domain-Based Attribute (DBA) is an attribute with values that are populated by records from another entity.
 
 **For a Free Form Attribute**
 

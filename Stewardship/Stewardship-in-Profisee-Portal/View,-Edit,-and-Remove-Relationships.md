@@ -4,7 +4,8 @@ You can manage the properties of a relationship from the Relationship List on a 
 
 Additionally, included records can be removed from the Relationship List entirely from this view.
 
-Note that when removing a record from a Relationship List, that record is deleted entirely.
+> [!CAUTION]
+> Note that when removing a record from a Relationship List, that record is deleted entirely.
 
 ## View/Edit Relationship
 

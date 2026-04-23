@@ -15,7 +15,8 @@ Once the service provider is configured, the Settings tab for this service provi
 * **Actions:**This option determines which action the service will perform on the input data. While all actions are presented, the user should only select the actions that are allowed with their license. This is a required field.
 * **Columns to Return:**This option specifies which columns are returned. Personator Consumer allows the user to select what data the service will output. The Columns input field allows the user to select either individual columns or groups, which are  returned in the output. These selected columns are returned in addition to the default columns, which are always returned. More information, including column definitions, can be found [here](http://wiki.melissadata.com/index.php?title=Personator:Output_Columns).
 
-You must select the columns you wish to map in your strategy.
+> [!NOTE]
+> You must select the columns you wish to map in your strategy.
 
 * **Request Options**: the Options section allows you to configure a number of options that change the way the service behaves. See Personator docs for more information on the available settings.
 

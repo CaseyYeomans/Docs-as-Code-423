@@ -13,11 +13,8 @@ To rewrite workflows that do not contain custom activities:
 5. Open the 2022.R1 Workflow Toolbox and create a new workflow template in a separate Visual Studio instance.
 6. Recreate the old workflow in the new environment using the updated 2022.R1 activities.
 
-Tips for recognizing updated activities:  
-  
-Updated activities are labeled "Profisee Platform," where old activities are labeled "Profisee SDK." Additionally, new activities reference "Record Data Context" rather than "Member Data Context."  
-  
-The previous **CreateBrowseEntityContext** activity has been replaced with **CreateRecordBrowserContext**, and the **NewMemberDataContext** activity has been deprecated.
+> [!NOTE]
+> Tips for recognizing updated activities: Updated activities are labeled "Profisee Platform," where old activities are labeled "Profisee SDK." Additionally, new activities reference "Record Data Context" rather than "Member Data Context." The previous CreateBrowseEntityContext activity has been replaced with CreateRecordBrowserContext , and the NewMemberDataContext activity has been deprecated.
 
 After you have re-written all workflows, it is recommended to uninstall the old version of the Profisee SDK and retain only the 2022.R1 SDK.
 

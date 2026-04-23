@@ -6,8 +6,8 @@ Profisee Administrators can create new attributes in the Profisee Portal from an
 2. Enter a name and description for the new attribute under the **Name** and **Description** fields.
 3. Select the **Type** of the attribute. The attribute type determines the rest of the settings for the attribute.
 
-A **Free Form Attribute**that has entirely user-defined values.  
-A **Domain-Based Attribute (DBA)** is an attribute with values that are populated by records from another entity.
+> [!NOTE]
+> A Free Form Attribute that has entirely user-defined values. A Domain-Based Attribute (DBA) is an attribute with values that are populated by records from another entity.
 
 **For a Free Form Attribute**
 

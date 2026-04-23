@@ -2,7 +2,8 @@
 
 Profisee admins with an [integrated Purview instance](https://support.profisee.com/wikis/profiseeplatform/azure_preview_overview) can associate data products between both platforms. This association causes Profisee entities to appear natively inside the Purview Data Catalog, and ensures changes made to Profisee data assets (such as attributes, relationships, hierarchies, etc.) are persisted across both platforms.
 
-This feature requires **Super Administrator** privileges in Profisee and the **Data Product Owne**r role in Purview.
+> [!NOTE]
+> This feature requires Super Administrator privileges in Profisee and the Data Product Owne r role in Purview.
 
 ## Creating/Configuring a Purview Data Product for Profisee
 

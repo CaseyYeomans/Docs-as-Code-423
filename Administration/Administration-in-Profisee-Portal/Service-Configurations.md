@@ -56,9 +56,8 @@ For **Azure Key Vault**:
 * **App Registration Secret**: (Client Secret): The client secret that you generated for your app in the app registration portal.
 * **Secret Name**: Specify the name of secret in Azure Key Vault.
 
-More information about Azure Key Vault can be found here: [Azure Key Vault documentation | Microsoft Learn](https://learn.microsoft.com/en-us/azure/key-vault/?source=recommendations)   
-  
-More information about OAuth can be found here: [OAuth 2.0 client credentials flow on the Microsoft identity platform - Microsoft identity platform | Microsoft Learn](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-client-creds-grant-flow#get-a-token)
+> [!NOTE]
+> More information about Azure Key Vault can be found here: Azure Key Vault documentation | Microsoft Learn More information about OAuth can be found here: OAuth 2.0 client credentials flow on the Microsoft identity platform - Microsoft identity platform | Microsoft Learn
 
 #### Headers
 

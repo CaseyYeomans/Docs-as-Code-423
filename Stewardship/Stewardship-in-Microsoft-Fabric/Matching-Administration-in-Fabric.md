@@ -55,7 +55,8 @@ You are presented with the following required fields:
 
 Once both fields are completed, the **Continue** button becomes active. Select **Continue** to proceed to the **Matching Sets and Attributes** configuration tab, or select **Close** to exit the drawer without saving.
 
-The **Continue** button remains greyed out until both the **Name** and **Entity** fields have been filled in.
+> [!NOTE]
+> The Continue button remains greyed out until both the Name and Entity fields have been filled in.
 
 ---
 

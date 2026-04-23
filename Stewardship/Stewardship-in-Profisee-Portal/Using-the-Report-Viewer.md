@@ -6,7 +6,8 @@ The information displayed in the report is determined by the configuration of th
 
 ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-i107a39b59c01b91e.png)
 
-If your version of Profisee is still using legacy reports (ones Powered by Izenda prior to version 2023.R1), you will receive an error message in a report zone. A system administrator must update the Profisee instance to use Power BI reports to view reports in FastApp Portal.
+> [!NOTE]
+> If your version of Profisee is still using legacy reports (ones Powered by Izenda prior to version 2023.R1), you will receive an error message in a report zone. A system administrator must update the Profisee instance to use Power BI reports to view reports in FastApp Portal.
 
 ---
 

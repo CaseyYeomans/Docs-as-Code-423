@@ -1,6 +1,7 @@
 # Install Profisee FastApp Studio
 
-Before installing the Profisee client, you must install the [.NET 8.0 hosting bundle and desktop runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) on any environment running Profisee FastApp Studio.
+> [!NOTE]
+> Before installing the Profisee client, you must install the .NET 8.0 hosting bundle and desktop runtime on any environment running Profisee FastApp Studio.
 
 Install From the Application Server
 

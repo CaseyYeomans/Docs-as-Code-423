@@ -45,10 +45,5 @@ Users in this assignment group will be assigned this task instead of the default
 
 Assignment groups can be further specified within Visual Studio. Composite assignment groups can be defined to receive tasks when a member contains one of several values. For example, an assignment group called "United Kingdom" could be created to receive a task when a member contains England, Wales, or Scotland for its Country value.
 
-• If the same task is triggered in multiple assignment groups, a user who is listed in several of those groups will only receive one task.  
-  
-• If a task is assigned to a team with no active accounts, the task falls back to assignees in the <default> group.  
-  
-• If there is no default group or applicable assignment group to receive a task, the workflow is suspended and the task expires.  
-  
-• You cannot assign an Entra/AD Group to a workflow, even if from a Team. Entra/AD Groups are filtered out because the user to which tasks should be assigned cannot be determined.
+> [!NOTE]
+> • If the same task is triggered in multiple assignment groups, a user who is listed in several of those groups will only receive one task. • If a task is assigned to a team with no active accounts, the task falls back to assignees in the <default> group. • If there is no default group or applicable assignment group to receive a task, the workflow is suspended and the task expires. • You cannot assign an Entra/AD Group to a workflow, even if from a Team. Entra/AD Groups are filtered out because the user to which tasks should be assigned cannot be determined.

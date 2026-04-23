@@ -24,6 +24,7 @@ You can also use the Quick Filter to search for specific items in the matching s
 
 ![](https://Profisee.magentrixcloud.com/sys/staticasset/read/file-idba77087c699089.png)
 
-You can import matching strategies from 2025 R2-2025 R4 as *.MatchingStrategy* files, or from 2026 R1 and after as *.json* files.
+> [!NOTE]
+> You can import matching strategies from 2025 R2-2025 R4 as .MatchingStrategy files, or from 2026 R1 and after as .json files.
 
 ---

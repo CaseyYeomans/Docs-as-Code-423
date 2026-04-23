@@ -15,12 +15,14 @@ To register a workflow
 4. Select the workflow project file (.csproj extension) that contains the workflow you wish to register, then click **Open**.
 5. Click the **Configuration** dropdown and select a configuration.
 
-This will typically have **Debug** and **Release** options, but there could be other options depending on your specific development configuration setup. When registering for a production environment, Profisee recommends deploying the **Release** configuration because build optimizations in release will yield better performance.
+> [!NOTE]
+> This will typically have Debug and Release options, but there could be other options depending on your specific development configuration setup. When registering for a production environment, Profisee recommends deploying the Release configuration because build optimizations in release will yield better performance.
 
 6. Click the Workflow File dropdown and select a .XAML file from the list that contains the workflow definition you want to register.
 7. Click **Register**.
 
-When a new version of an existing workflow is registered, the configuration from the prior version is used for the version and each of the version’s configurable activities where the activities match exactly by name. If new configurable activities are added, you must explicitly configure these after the registration is complete.
+> [!NOTE]
+> When a new version of an existing workflow is registered, the configuration from the prior version is used for the version and each of the version’s configurable activities where the activities match exactly by name. If new configurable activities are added, you must explicitly configure these after the registration is complete.
 
 The **Workflow summary information** panel displays the following information about the registered workflow.
 
