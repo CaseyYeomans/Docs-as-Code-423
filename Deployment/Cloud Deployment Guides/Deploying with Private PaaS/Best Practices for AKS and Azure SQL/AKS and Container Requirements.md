@@ -1,0 +1,20 @@
+# AKS and Container Requirements
+
+Regular AKS maintenance is needed for the following:
+
+- **AKS**: AKS must be kept on a [supported version](https://urldefense.com/v3/__https:/learn.microsoft.com/en-us/azure/aks/supported-kubernetes-versions?tabs=azure-cli__;!!NFWRZ6kECLqu!t3ViTadusQ2v5Q1Zqnva3XF4NBHyum6mf-_zzCYxZxMMGbiazhxo1qYoBMrjiQxLS38HE95mHFMznq1hoW0A8b0gl3c$). The Profisee platform has been tested with the latest stable AKS v1.26.3. As a rule of thumb, Profisee recommends the current default AKS version when creating a new cluster.
+- **Nodes**: Both [Linux and Windows](https://urldefense.com/v3/__https:/learn.microsoft.com/en-us/azure/aks/node-image-upgrade__;!!NFWRZ6kECLqu!t3ViTadusQ2v5Q1Zqnva3XF4NBHyum6mf-_zzCYxZxMMGbiazhxo1qYoBMrjiQxLS38HE95mHFMznq1hoW0AzmeBkIU$) node images are updated by MS regularly. Linux is updated weekly and Windows is updated monthly.
+- **Profisee Container**: Every month Microsoft releases the latest patched Server 2019 [Core container](https://urldefense.com/v3/__https:/hub.docker.com/_/microsoft-dotnet-framework-aspnet__;!!NFWRZ6kECLqu!t3ViTadusQ2v5Q1Zqnva3XF4NBHyum6mf-_zzCYxZxMMGbiazhxo1qYoBMrjiQxLS38HE95mHFMznq1hoW0ACMvdjGE$) and Profisee adds the latest Profisee software version to it and publishes it on the Profisee Azure Container Registry (ACR). This process happens around 15-16th of each month. Profisee clients must restart the profisee-0 pod around the 19-th or 20th for it to pick up that newly released image.
+- **Other Deployments**: This includes all deployments in the cluster besides Profisee such as nginx, pod identity (soon to be replaced by Azure Workload Identity), and cert-manager (for Let's Encrypt certificates). These must be kept up to date. Not all are available in a cluster as it depends on the client's particular installation.
+
+## Container Requirements
+
+Care must be taken when performing the container's load calculation for CPU and RAM. These are based on the number of records licensed, whether the client utilizes Matching and other features. Profisee does offer sizing [recommendations](https://urldefense.com/v3/__https:/support.profisee.com/wikis/2022_r2_support/system_requirements_for_profisee_server__;!!NFWRZ6kECLqu!t3ViTadusQ2v5Q1Zqnva3XF4NBHyum6mf-_zzCYxZxMMGbiazhxo1qYoBMrjiQxLS38HE95mHFMznq1hoW0Arn7EsUk$), but they are not one size fits all.
+
+Please be aware that the recommendations do not take into consideration the AKS [kubelet reservations](https://urldefense.com/v3/__https:/learn.microsoft.com/en-us/azure/aks/concepts-clusters-workloads*resource-reservations__;Iw!!NFWRZ6kECLqu!t3ViTadusQ2v5Q1Zqnva3XF4NBHyum6mf-_zzCYxZxMMGbiazhxo1qYoBMrjiQxLS38HE95mHFMznq1hoW0Ab9yYQGA$). If the requirements call for 8 cores and 32GB of ram, a D8 SKU in Azure will **not** work as AKS reserves both CPU and RAM from that node. Windows itself further reserves 2GB of memory after that calculation. Profisee does offer some suggested [sizes](https://urldefense.com/v3/__https:/support.profisee.com/wikis/2022_r2_support/installing_profisee_software__;!!NFWRZ6kECLqu!t3ViTadusQ2v5Q1Zqnva3XF4NBHyum6mf-_zzCYxZxMMGbiazhxo1qYoBMrjiQxLS38HE95mHFMznq1hoW0AA0X5GjE$) but, again, they are not one size fits all. Clients will need to monitor the cluster nodes and update the stateful set to address memory or CPU constraints. For example: a D8 node has 8 cores, 32GB ram.
+
+Without layering logging, monitoring, Defender for Containers, etc. clients will most likely get approximately 7.5 cores and about 25-27GB of the node. Once clients add the aforementioned, describe your Windows node and play with the stateful set's limits so memory is not overcommitted. A change in the stateful set will result in a restart of the Profisee pod. This is best done during a maintenance window.
+
+### See more
+
+[Overcommitment of Nodes](https://support.profisee.com/wikis/profiseeplatform/Overcommitment_of_Nodes)

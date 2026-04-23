@@ -1,0 +1,8 @@
+# Maintenance Best Practices
+
+One of the benefits of PaaS deployment is the ease of maintaining a deployed instance. The maintenance process for an Azure-deployed environment is forgiving and does not require constant attention. However, a few best practices should still be observed to maintain optimal performance.
+
+- **Restart pods on a monthly basis to receive updates**. Pods should be restarted once a month if you wish to receive any new updates. Updates are published on the 16th of each month. The nodes receive no traffic and do not need to be restarted.
+- **Upgrade the AKS annually or semi-annually.**Upgrade frequency is entirely customer dependent, and upgrades do not need to be made by any particular timeframe, However, it is strongly recommended you are no more than one major version behind the current version. New AKS versions are released approximately every 9-12 months.
+- **Backup the settings.yaml file**. In the event you need to rebuild your AKS instance, the *settings.yaml* file located in your AKS container will allow for a smooth and painless rebuilding process. If you are using KeyVault, your *settings.yaml* file is automatically stored within. If not, contact Profisee Support for an alternative method.
+- **Regenerate Secrets (Optional)**. It is not required (or necessarily recommended) to regenerate secrets. However, if you want to regenerate secrets, you may do so by removing both existing pods and getting new ones. Whenever you upgrade, ensure you scale down to 1 node, then upgrade, then go back up to 2 nodes

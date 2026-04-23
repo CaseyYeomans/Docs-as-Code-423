@@ -1,0 +1,28 @@
+# Administration in FastApp Studio
+
+This section contains the following topics:
+
+- [Accounts and Teams](./Accounts and Teams/)
+- [Adaptive Modeling](./Adaptive Modeling/)
+- [Address Verification](./Address Verif/)
+- [Advanced Modeling](./Advanced Modeling/)
+- [Cluster Maintenance](./Cluster Maintenance/)
+- [Configure Profisee FastApp Studio Settings](./Configure Profisee Studio Settings/)
+- [Configure Profisee System Settings](./Configure Profisee System Settings/)
+- [Data Archiving and Deployment](./Data Archiving and Deploy/)
+- [Data Quality Rules](./Data Quality Rules/)
+- [External Systems List](./External Systems List/)
+- [Forms](./Forms/)
+- [Hierarchy in FastApps Studio](./Hierarchy in Studio/)
+- [Licensing in FastApps Studio](./Licensing in Studio/)
+- [Managing Connections](./Manage Connections/)
+- [Matching and Survivorship](./Matching and Survivorship/)
+- [Miscellaneous Admin Information](./Miscellaneous Admin Info/)
+- [My Workspace](./My Workspace/)
+- [Navigate Profisee FastApp Studio](./Navigate Profisee Studio/)
+- [Portal Applications](./Portal Apps/)
+- [Presentation Views](./Pres Views/)
+- [Real-Time Event Processing](./Real-Time Event Proc/)
+- [Staging](./Staging/)
+- [Synonym Lists](./Synonym Lists/)
+- [Workflow](./WF/)

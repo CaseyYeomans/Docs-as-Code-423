@@ -1,0 +1,11 @@
+# Understanding the Required Azure Roles and Permissions
+
+When deploying the Profisee Platform using Azure Kubernetes Services, certain permission requirements are necessary to create and manage the resources used for deployment. The individuals with permissions to create and manage these resources are referred to as your Deployment Team. Your Deployment Team may consist several individuals who each have access to one of these permissions, or your Deployment Team may be one or two individuals who have access to all required permissions.
+
+Whether your deployment team consists of a single person or a large group of individuals with specific roles, your Deployment Team must cumulatively have access to the following.
+
+- **DNS**: If you are not updating your DNS record as part of the deployment process (if you select **No** for the **Update DNS** property of the [ARM template](https://support.profisee.com/wikis/profiseeplatform/deploying_the_AKS_cluster_with_the_arm_template)), a user must have the ability to manually update the DNS record.
+- **Azure Active Directory Application Registration**: If you are not creating a new application registration as part of the deployment (if you select **No** for the **Active Directory Create App** property of the [ARM template](https://support.profisee.com/wikis/profiseeplatform/deploying_the_AKS_cluster_with_the_arm_template)), a user must have permission to create an application registration in Azure Active Directory.
+- **Storage Account**: If you are not creating a new Azure storage account as part of the deployment (if you select **No** for the **Storage Account Create New** property of the [ARM template](https://support.profisee.com/wikis/profiseeplatform/deploying_the_AKS_cluster_with_the_arm_template)), a user must have permissions to create and manage an Azure storage account.
+- **SQL Server**: A user must have SQL Server credentials that allow them to create and assign roles to Managed Identities.
+- **Managed Identity**: The Managed Identity used for deployment must have Contributor access to the Resource Group used for deployment. For more information, see [Planning your Managed Identity Configuration](https://support.profisee.com/wikis/profiseeplatform/planning_your_managed_identity_configuration).

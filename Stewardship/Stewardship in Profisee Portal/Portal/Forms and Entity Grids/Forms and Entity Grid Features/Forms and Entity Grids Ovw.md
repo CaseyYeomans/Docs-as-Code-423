@@ -1,0 +1,7 @@
+# Forms and Entity Grids Overview
+
+Forms and Entity Grids are the primary way a data steward can interact with data within Profisee FastApp Portal. **Forms**refer to the HTML web pages that include system controls and viewable information for [tasks](https://support.profisee.com/wikis/profiseeplatform/tasks_and_workflows_overview), [record history](https://support.profisee.com/wikis/profiseeplatform/view_member_history_in_a_portal_form), and [record quality](https://support.profisee.com/wikis/profiseeplatform/view_member_quality_in_a_fastapps_portal_form). You can also copy information to your clipboard directly from a form.
+
+**Entity Grids** are tables within FastApp portal that contain essential metadata in the form of Entities. Entity Grids are the most visibly accessible way to view and manage data in Profisee FastApp Portal. Using Entity Grid controls, you can also view and manage [data quality](https://support.profisee.com/wikis/profiseeplatform/view_data_quality_issues_from_the_portal_entity_grid), governance information, and [relationship information](https://support.profisee.com/wikis/profiseeplatform/view_edit_and_remove_relationships).
+
+Using Forms and Entities, you can perform [Matching and Survivorship](https://support.profisee.com/wikis/profiseeplatform/view_match_groups_in_survivorship_view) functions to promote your data by removing duplicated data and merging similar records. This is an essential process to ensure optimal data quality.
